@@ -1,0 +1,14 @@
+# robots.txt – FTFL CARAÏBES
+# https://ftfl-sxm.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ftfl-sxm.com/sitemap.xml
+
+# Crawl-delay (recommandé pour éviter la surcharge)
+Crawl-delay: 10
+
+# Disallow inutile (site vitrine, tout est public)
+# Disallow:
