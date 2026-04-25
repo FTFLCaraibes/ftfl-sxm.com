@@ -5,7 +5,7 @@
   <!-- ── PAGE PRINCIPALE – Français (défaut) ─────────────── -->
   <url>
     <loc>https://www.ftfl-sxm.com/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
@@ -19,7 +19,7 @@
   <!-- ── VERSION ANGLAISE ─────────────────────────────────── -->
   <url>
     <loc>https://www.ftfl-sxm.com/en/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
@@ -33,7 +33,7 @@
   <!-- ── VERSION ESPAGNOLE ────────────────────────────────── -->
   <url>
     <loc>https://www.ftfl-sxm.com/es/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
@@ -47,7 +47,7 @@
   <!-- ── VERSION NÉERLANDAISE ─────────────────────────────── -->
   <url>
     <loc>https://www.ftfl-sxm.com/nl/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
@@ -61,7 +61,7 @@
   <!-- ── VERSION PORTUGAISE ───────────────────────────────── -->
   <url>
     <loc>https://www.ftfl-sxm.com/pt/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
