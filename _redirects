@@ -1,0 +1,5 @@
+# Cloudflare Pages – redirections canoniques
+# Non-www → www (toutes variantes HTTP/HTTPS)
+https://ftfl-sxm.com/*  https://www.ftfl-sxm.com/:splat  301
+http://ftfl-sxm.com/*   https://www.ftfl-sxm.com/:splat  301
+http://www.ftfl-sxm.com/* https://www.ftfl-sxm.com/:splat 301
