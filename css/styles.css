@@ -87,7 +87,7 @@ img { max-width:100%; display:block; }
 }
 .navbar .container { display:flex; align-items:center; justify-content:space-between; }
 .navbar-logo { display:flex; align-items:center; }
-.navbar-logo img { height:64px; width:auto; object-fit:contain; transition:var(--transition); }
+.navbar-logo img { height:90px; width:auto; object-fit:contain; transition:var(--transition); }
 .navbar-logo img:hover { transform:scale(1.04); }
 .nav-links { display:flex; align-items:center; gap:36px; list-style:none; }
 .nav-links a {
@@ -111,7 +111,7 @@ img { max-width:100%; display:block; }
 .hero {
   position:relative; min-height:100vh;
   display:flex; align-items:center;
-  padding-top:100px; padding-bottom:60px;
+  padding-top:140px; padding-bottom:60px;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0A2A15 100%);
   overflow:hidden;
 }
@@ -702,7 +702,7 @@ img { max-width:100%; display:block; }
 }
 #preloader.done { opacity:0; visibility:hidden; pointer-events:none; }
 .pl-logo {
-  width:auto; height:220px; max-width:360px;
+  width:auto; height:300px; max-width:500px;
   object-fit:contain; border-radius:0;
   filter:drop-shadow(0 8px 32px rgba(0,0,0,.55));
   animation:plPop .55s cubic-bezier(.34,1.56,.64,1) .25s both;
