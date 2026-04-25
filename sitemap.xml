@@ -72,4 +72,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
 
+  <!-- ── PAGES SEO ─────────────────────────────────────────── -->
+  <url>
+    <loc>https://www.ftfl-sxm.com/services/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ftfl-sxm.com/approche/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ftfl-sxm.com/valeurs/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ftfl-sxm.com/zone/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ftfl-sxm.com/contact/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
