@@ -548,6 +548,8 @@ img { max-width:100%; display:block; }
   .footer-bottom { flex-direction:column; gap:12px; text-align:center; }
   .nav-links, .navbar-cta { display:none; }
   .burger { display:flex; }
+  .navbar-logo img { height:56px; }
+  .pl-logo { height:160px; max-width:260px; }
   .hero-stats { gap:24px; flex-wrap:wrap; }
   .hero-photo { width:100%; }
   .contact-form { padding:28px 20px; }
