@@ -3058,12 +3058,17 @@ function applyLang(lang) {
 }
 
 function setLang(lang) {
-  // Pages séparées par langue — naviguer si l'URL ne correspond pas
   const langPaths = { fr:'/', en:'/en/', es:'/es/', nl:'/nl/', pt:'/pt/' };
   const target = langPaths[lang] || '/';
-  const cur = location.pathname.replace(/^\/([a-z]{2})\/?$/, '/$1/');
+  // Détecte la langue de la page courante via le chemin
+  const path = location.pathname;
+  let curLang = 'fr';
+  if (/^\/en(\/|$)/.test(path)) curLang = 'en';
+  else if (/^\/es(\/|$)/.test(path)) curLang = 'es';
+  else if (/^\/nl(\/|$)/.test(path)) curLang = 'nl';
+  else if (/^\/pt(\/|$)/.test(path)) curLang = 'pt';
   localStorage.setItem('ftfl-lang', lang);
-  if (cur !== target) {
+  if (curLang !== lang) {
     window.location.href = target;
     return;
   }
