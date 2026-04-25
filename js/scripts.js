@@ -150,13 +150,11 @@ function handleSubmit(e) {
 // Priorité : window.__LANG (injecté par les pages /en/ /es/ etc.)
 //            puis localStorage, puis langue navigateur, puis 'fr'
 const urlLang = new URLSearchParams(window.location.search).get('lang');
-const browserLang = (navigator.language || navigator.userLanguage || 'fr').slice(0,2);
 const supported = ['fr','en','es','nl','pt'];
-const savedLang = localStorage.getItem('ftfl-lang');
+// window.__LANG est injecté par les pages statiques /en/ /es/ /nl/ /pt/
+// Sans injection, on est sur une page française — on force 'fr'
 let currentLang = (window.__LANG && supported.includes(window.__LANG)) ? window.__LANG
                 : supported.includes(urlLang)                          ? urlLang
-                : supported.includes(savedLang)                        ? savedLang
-                : supported.includes(browserLang)                      ? browserLang
                 : 'fr';
 
 const i18nData = {
