@@ -41,17 +41,17 @@ OG_IMAGES = {
     'approche':          f'{BASE_URL}/images/FTFL-WEB-3.webp',
     'valeurs':           f'{BASE_URL}/images/FTFL-WEB-3.webp',
     'zone':              f'{BASE_URL}/images/FTFL-WEB-1.webp',
-    'contact':           f'{BASE_URL}/images/Logo%20FTFL.png',
-    'mentions-legales':  f'{BASE_URL}/images/Logo%20FTFL.png',
-    'confidentialite':   f'{BASE_URL}/images/Logo%20FTFL.png',
+    'contact':           f'{BASE_URL}/images/og-image.jpg',
+    'mentions-legales':  f'{BASE_URL}/images/og-image.jpg',
+    'confidentialite':   f'{BASE_URL}/images/og-image.jpg',
 }
 
 # ── Métadonnées par slug et langue ───────────────────────────────
 PAGE_META = {
     'services': {
         'fr': {
-            'title':      'FTFL CARAÏBES | Services de Construction Saint-Martin | Terrassement, Aménagement, Second Œuvre',
-            'desc':       'Découvrez les services de construction de FTFL CARAÏBES à Saint-Martin : terrassement et VRD, aménagement extérieur, travaux de second œuvre, multiservices et maintenance. Devis gratuit.',
+            'title':      'Services BTP à Saint-Martin – Terrassement & Second Œuvre',
+            'desc':       'Terrassement, VRD, aménagement extérieur, second œuvre et multiservices à Saint-Martin. Devis gratuit.',
             'og_title':   'FTFL CARAÏBES | Services de Construction Saint-Martin',
             'og_desc':    'Terrassement, VRD, aménagement extérieur, second œuvre et multiservices à Saint-Martin. Devis gratuit.',
             'tw_title':   'FTFL CARAÏBES | Services Construction Saint-Martin',
@@ -59,8 +59,8 @@ PAGE_META = {
             'breadcrumb': 'Services',
         },
         'en': {
-            'title':      'FTFL CARAÏBES | Construction Services Saint Martin | Earthworks, Landscaping, Finishing SXM',
-            'desc':       'Discover FTFL CARAÏBES construction services in Saint Martin: earthworks and civil works, exterior landscaping, finishing works and maintenance. Free quote.',
+            'title':      'Construction Services Saint Martin – Earthworks & Finishing',
+            'desc':       'Earthworks, civil works, exterior landscaping, finishing works and maintenance in Saint Martin. Free quote.',
             'og_title':   'FTFL CARAÏBES | Construction Services Saint Martin',
             'og_desc':    'Earthworks, civil works, exterior landscaping, finishing works and maintenance in Saint Martin. Free quote.',
             'tw_title':   'FTFL CARAÏBES | Construction Services Saint Martin',
@@ -68,8 +68,8 @@ PAGE_META = {
             'breadcrumb': 'Services',
         },
         'es': {
-            'title':      'FTFL CARAÏBES | Servicios de Construcción Saint-Martin | Terraplenaje, Exteriores, Acabados SXM',
-            'desc':       'Descubra los servicios de construcción de FTFL CARAÏBES en Saint-Martin: movimiento de tierras, obras exteriores, acabados y multiservicios. Presupuesto gratuito.',
+            'title':      'Servicios de Construcción Saint-Martin – FTFL CARAÏBES',
+            'desc':       'Movimiento de tierras, obras exteriores, acabados y multiservicios en Saint-Martin. Presupuesto gratuito.',
             'og_title':   'FTFL CARAÏBES | Servicios de Construcción Saint-Martin',
             'og_desc':    'Movimiento de tierras, obras exteriores, acabados y multiservicios en Saint-Martin. Presupuesto gratuito.',
             'tw_title':   'FTFL CARAÏBES | Servicios Construcción Saint-Martin',
@@ -77,8 +77,8 @@ PAGE_META = {
             'breadcrumb': 'Servicios',
         },
         'nl': {
-            'title':      'FTFL CARAÏBES | Bouwdiensten Sint Maarten Saint-Martin | Grondwerken, Buitenaanleg, Afbouw SXM',
-            'desc':       'Ontdek de bouwdiensten van FTFL CARAÏBES op Sint Maarten: grondwerken, buitenaanleg, afbouwwerken en multidiensten. Gratis offerte.',
+            'title':      'Bouwdiensten Sint Maarten – Grondwerken & Afbouw',
+            'desc':       'Grondwerken, buitenaanleg, afbouwwerken en multidiensten op Sint Maarten / Saint-Martin. Gratis offerte.',
             'og_title':   'FTFL CARAÏBES | Bouwdiensten Sint Maarten / Saint-Martin',
             'og_desc':    'Grondwerken, buitenaanleg, afbouwwerken en multidiensten op Sint Maarten. Gratis offerte.',
             'tw_title':   'FTFL CARAÏBES | Bouwdiensten Sint Maarten',
@@ -86,8 +86,8 @@ PAGE_META = {
             'breadcrumb': 'Diensten',
         },
         'pt': {
-            'title':      'FTFL CARAÏBES | Serviços de Construção Saint-Martin | Terraplenagem, Exteriores, Acabamentos SXM',
-            'desc':       'Descubra os serviços de construção da FTFL CARAÏBES em Saint-Martin: terraplenagem, obras exteriores, acabamentos e multisserviços. Orçamento gratuito.',
+            'title':      'Serviços de Construção Saint-Martin – FTFL CARAÏBES',
+            'desc':       'Terraplenagem, obras exteriores, acabamentos e multisserviços em Saint-Martin. Orçamento gratuito.',
             'og_title':   'FTFL CARAÏBES | Serviços de Construção Saint-Martin',
             'og_desc':    'Terraplenagem, obras exteriores, acabamentos e multisserviços em Saint-Martin. Orçamento gratuito.',
             'tw_title':   'FTFL CARAÏBES | Serviços Construção Saint-Martin',
@@ -97,8 +97,8 @@ PAGE_META = {
     },
     'approche': {
         'fr': {
-            'title':      'FTFL CARAÏBES | Notre Méthode de Travail | Processus Construction Saint-Martin',
-            'desc':       'La méthode FTFL CARAÏBES : 4 étapes clés pour mener vos projets de construction à Saint-Martin avec rigueur et transparence — écoute, étude, exécution, livraison.',
+            'title':      'FTFL CARAÏBES | Notre Méthode Construction Saint-Martin',
+            'desc':       'Méthode FTFL CARAÏBES : 4 étapes pour vos projets à Saint-Martin — écoute, étude, exécution, livraison. Rigueur et transparence.',
             'og_title':   'FTFL CARAÏBES | Notre Méthode de Travail Saint-Martin',
             'og_desc':    '4 étapes rigoureuses pour vos projets BTP à Saint-Martin : écoute, étude, exécution, livraison.',
             'tw_title':   'FTFL CARAÏBES | Méthode Construction Saint-Martin',
@@ -106,8 +106,8 @@ PAGE_META = {
             'breadcrumb': 'Notre Méthode',
         },
         'en': {
-            'title':      'FTFL CARAÏBES | Our Working Method | Construction Process Saint Martin SXM',
-            'desc':       'The FTFL CARAÏBES method: 4 key steps to lead your construction projects in Saint Martin with rigor and transparency — listening, study, execution, delivery.',
+            'title':      'FTFL CARAÏBES | Construction Method Saint Martin',
+            'desc':       'The FTFL CARAÏBES method: 4 steps for your projects in Saint Martin — listening, study, execution, delivery.',
             'og_title':   'FTFL CARAÏBES | Our Working Method Saint Martin',
             'og_desc':    '4 rigorous steps to lead your construction projects in Saint Martin: listening, study, execution, delivery.',
             'tw_title':   'FTFL CARAÏBES | Working Method Saint Martin',
@@ -115,7 +115,7 @@ PAGE_META = {
             'breadcrumb': 'Our Method',
         },
         'es': {
-            'title':      'FTFL CARAÏBES | Nuestro Método de Trabajo | Proceso Constructivo Saint-Martin SXM',
+            'title':      'FTFL CARAÏBES | Método de Trabajo Saint-Martin',
             'desc':       'El método FTFL CARAÏBES: 4 etapas clave para sus proyectos de construcción en Saint-Martin — escucha, estudio, ejecución, entrega.',
             'og_title':   'FTFL CARAÏBES | Nuestro Método de Trabajo Saint-Martin',
             'og_desc':    '4 etapas rigurosas para sus proyectos en Saint-Martin: escucha, estudio, ejecución, entrega.',
@@ -124,7 +124,7 @@ PAGE_META = {
             'breadcrumb': 'Nuestro Método',
         },
         'nl': {
-            'title':      'FTFL CARAÏBES | Onze Werkmethode | Bouwproces Sint Maarten Saint-Martin SXM',
+            'title':      'FTFL CARAÏBES | Werkmethode Sint Maarten / Saint-Martin',
             'desc':       'De FTFL CARAÏBES methode: 4 sleutelstappen voor uw bouwprojecten op Sint Maarten — luisteren, studie, uitvoering, oplevering.',
             'og_title':   'FTFL CARAÏBES | Onze Werkmethode Sint Maarten',
             'og_desc':    '4 stappen voor uw bouwprojecten op Sint Maarten: luisteren, studie, uitvoering, oplevering.',
@@ -133,7 +133,7 @@ PAGE_META = {
             'breadcrumb': 'Onze Methode',
         },
         'pt': {
-            'title':      'FTFL CARAÏBES | Nosso Método de Trabalho | Processo de Construção Saint-Martin SXM',
+            'title':      'FTFL CARAÏBES | Método de Trabalho Saint-Martin',
             'desc':       'O método FTFL CARAÏBES: 4 etapas chave para os seus projetos de construção em Saint-Martin — escuta, estudo, execução, entrega.',
             'og_title':   'FTFL CARAÏBES | Nosso Método de Trabalho Saint-Martin',
             'og_desc':    '4 etapas rigorosas para os seus projetos em Saint-Martin: escuta, estudo, execução, entrega.',
@@ -144,8 +144,8 @@ PAGE_META = {
     },
     'valeurs': {
         'fr': {
-            'title':      'FTFL CARAÏBES | Nos Valeurs | Entreprise de Construction Saint-Martin',
-            'desc':       'Les valeurs fondatrices de FTFL CARAÏBES : ancrage local, fiabilité, polyvalence et exigence. Découvrez ce qui fait la différence de votre partenaire BTP à Saint-Martin.',
+            'title':      'FTFL CARAÏBES | Nos Valeurs | Construction Saint-Martin',
+            'desc':       'Ancrage local, fiabilité, polyvalence et exigence — les 4 piliers de FTFL CARAÏBES à Saint-Martin.',
             'og_title':   'FTFL CARAÏBES | Nos Valeurs',
             'og_desc':    'Ancrage local, fiabilité, polyvalence et exigence — les 4 piliers de FTFL CARAÏBES à Saint-Martin.',
             'tw_title':   'FTFL CARAÏBES | Valeurs Construction Saint-Martin',
@@ -162,8 +162,8 @@ PAGE_META = {
             'breadcrumb': 'Our Values',
         },
         'es': {
-            'title':      'FTFL CARAÏBES | Nuestros Valores | Empresa de Construcción Saint-Martin',
-            'desc':       'Los valores fundadores de FTFL CARAÏBES: arraigo local, fiabilidad, polivalencia y exigencia. Descubra lo que distingue a su socio de construcción en Saint-Martin.',
+            'title':      'FTFL CARAÏBES | Nuestros Valores Saint-Martin',
+            'desc':       'Arraigo local, fiabilidad, polivalencia y exigencia. Los 4 pilares de FTFL CARAÏBES en Saint-Martin.',
             'og_title':   'FTFL CARAÏBES | Nuestros Valores',
             'og_desc':    'Arraigo local, fiabilidad, polivalencia y exigencia — los 4 pilares de FTFL CARAÏBES en Saint-Martin.',
             'tw_title':   'FTFL CARAÏBES | Valores Construcción Saint-Martin',
@@ -180,8 +180,8 @@ PAGE_META = {
             'breadcrumb': 'Onze Waarden',
         },
         'pt': {
-            'title':      'FTFL CARAÏBES | Os Nossos Valores | Empresa de Construção Saint-Martin',
-            'desc':       'Os valores fundadores da FTFL CARAÏBES: enraizamento local, fiabilidade, polivalência e exigência. Descubra o que distingue o seu parceiro de construção em Saint-Martin.',
+            'title':      'FTFL CARAÏBES | Os Nossos Valores Saint-Martin',
+            'desc':       'Enraizamento local, fiabilidade, polivalência e exigência. Os 4 pilares da FTFL CARAÏBES em Saint-Martin.',
             'og_title':   'FTFL CARAÏBES | Os Nossos Valores',
             'og_desc':    'Enraizamento local, fiabilidade, polivalência e exigência — os 4 pilares da FTFL CARAÏBES em Saint-Martin.',
             'tw_title':   'FTFL CARAÏBES | Valores Construção Saint-Martin',
@@ -191,8 +191,8 @@ PAGE_META = {
     },
     'zone': {
         'fr': {
-            'title':      "FTFL CARAÏBES | Zone d'Intervention Saint-Martin Sint Maarten | Construction SXM",
-            'desc':       "FTFL CARAÏBES intervient sur toute l'île de Saint-Martin / Sint Maarten : Orient Bay, Marigot, Grand Case, Philipsburg, Simpson Bay et plus. Construction côté français et hollandais.",
+            'title':      "FTFL CARAÏBES | Zone d'Intervention Saint-Martin / SXM",
+            'desc':       "Interventions sur toute l'île de Saint-Martin / Sint Maarten. Orient Bay, Marigot, Philipsburg, Grand Case. Côtés français et hollandais.",
             'og_title':   "FTFL CARAÏBES | Zone d'Intervention Saint-Martin",
             'og_desc':    "Interventions sur toute l'île de Saint-Martin / Sint Maarten, côté français et hollandais.",
             'tw_title':   'FTFL CARAÏBES | Zone Intervention SXM',
@@ -200,8 +200,8 @@ PAGE_META = {
             'breadcrumb': "Zone d'Intervention",
         },
         'en': {
-            'title':      'FTFL CARAÏBES | Service Area Saint Martin Sint Maarten | Construction SXM',
-            'desc':       'FTFL CARAÏBES operates across the entire island of Saint Martin / Sint Maarten: Orient Bay, Marigot, Grand Case, Philipsburg, Simpson Bay and more. French and Dutch sides.',
+            'title':      'FTFL CARAÏBES | Service Area Saint Martin / Sint Maarten',
+            'desc':       'Operations across Saint Martin / Sint Maarten island: Orient Bay, Marigot, Philipsburg, Grand Case. French and Dutch sides.',
             'og_title':   'FTFL CARAÏBES | Service Area Saint Martin Sint Maarten',
             'og_desc':    'Operations across the entire island of Saint Martin / Sint Maarten, French and Dutch sides.',
             'tw_title':   'FTFL CARAÏBES | Service Area SXM',
@@ -209,7 +209,7 @@ PAGE_META = {
             'breadcrumb': 'Service Area',
         },
         'es': {
-            'title':      'FTFL CARAÏBES | Zona de Intervención Saint-Martin Sint Maarten | Construcción SXM',
+            'title':      'FTFL CARAÏBES | Zona de Intervención Saint-Martin',
             'desc':       'FTFL CARAÏBES opera en toda la isla de Saint-Martin / Sint Maarten: Orient Bay, Marigot, Grand Case, Philipsburg, Simpson Bay y más. Lados francés y holandés.',
             'og_title':   'FTFL CARAÏBES | Zona de Intervención Saint-Martin',
             'og_desc':    'Operaciones en toda la isla de Saint-Martin / Sint Maarten, lados francés y holandés.',
@@ -227,7 +227,7 @@ PAGE_META = {
             'breadcrumb': 'Werkgebied',
         },
         'pt': {
-            'title':      'FTFL CARAÏBES | Zona de Intervenção Saint-Martin Sint Maarten | Construção SXM',
+            'title':      'FTFL CARAÏBES | Zona de Intervenção Saint-Martin',
             'desc':       'A FTFL CARAÏBES opera em toda a ilha de Saint-Martin / Sint Maarten: Orient Bay, Marigot, Grand Case, Philipsburg, Simpson Bay e mais. Lados francês e holandês.',
             'og_title':   'FTFL CARAÏBES | Zona de Intervenção Saint-Martin',
             'og_desc':    'Operações em toda a ilha de Saint-Martin / Sint Maarten, lados francês e holandês.',
@@ -238,8 +238,8 @@ PAGE_META = {
     },
     'contact': {
         'fr': {
-            'title':      'FTFL CARAÏBES | Contact & Devis Gratuit | Construction Saint-Martin Sint Maarten',
-            'desc':       'Contactez FTFL CARAÏBES pour votre projet de construction à Saint-Martin. Devis gratuit et sans engagement. Réponse sous 24h. Téléphone, WhatsApp, email et formulaire.',
+            'title':      'FTFL CARAÏBES | Contact & Devis Gratuit Saint-Martin',
+            'desc':       'Devis gratuit pour votre projet de construction à Saint-Martin. Réponse sous 24h. Téléphone, WhatsApp et email.',
             'og_title':   'FTFL CARAÏBES | Contact & Devis Gratuit',
             'og_desc':    'Devis gratuit pour votre construction à Saint-Martin. Réponse sous 24h. Téléphone, WhatsApp, email.',
             'tw_title':   'FTFL CARAÏBES | Devis Gratuit Saint-Martin',
@@ -247,7 +247,7 @@ PAGE_META = {
             'breadcrumb': 'Contact',
         },
         'en': {
-            'title':      'FTFL CARAÏBES | Contact & Free Quote | Construction Saint Martin Sint Maarten',
+            'title':      'FTFL CARAÏBES | Contact & Free Quote Saint Martin',
             'desc':       'Contact FTFL CARAÏBES for your construction project in Saint Martin. Free quote with no commitment. 24h response. Phone, WhatsApp, email and online form.',
             'og_title':   'FTFL CARAÏBES | Contact & Free Quote',
             'og_desc':    'Free quote for your construction in Saint Martin. 24h response. Phone, WhatsApp, email.',
@@ -256,8 +256,8 @@ PAGE_META = {
             'breadcrumb': 'Contact',
         },
         'es': {
-            'title':      'FTFL CARAÏBES | Contacto & Presupuesto Gratuito | Construcción Saint-Martin Sint Maarten',
-            'desc':       'Contacte FTFL CARAÏBES para su proyecto de construcción en Saint-Martin. Presupuesto gratuito sin compromiso. Respuesta en 24h. Teléfono, WhatsApp, email y formulario.',
+            'title':      'FTFL CARAÏBES | Contacto & Presupuesto Gratuito',
+            'desc':       'Presupuesto gratuito para su proyecto en Saint-Martin. Respuesta en 24h. Teléfono, WhatsApp y email.',
             'og_title':   'FTFL CARAÏBES | Contacto & Presupuesto Gratuito',
             'og_desc':    'Presupuesto gratuito para su construcción en Saint-Martin. Respuesta en 24h. Teléfono, WhatsApp, email.',
             'tw_title':   'FTFL CARAÏBES | Presupuesto Gratuito Saint-Martin',
@@ -265,7 +265,7 @@ PAGE_META = {
             'breadcrumb': 'Contacto',
         },
         'nl': {
-            'title':      'FTFL CARAÏBES | Contact & Gratis Offerte | Bouw Sint Maarten Saint-Martin',
+            'title':      'FTFL CARAÏBES | Contact & Gratis Offerte Sint Maarten',
             'desc':       'Neem contact op met FTFL CARAÏBES voor uw bouwproject op Sint Maarten. Gratis offerte zonder verplichtingen. Antwoord binnen 24u. Telefoon, WhatsApp, e-mail.',
             'og_title':   'FTFL CARAÏBES | Contact & Gratis Offerte',
             'og_desc':    'Gratis offerte voor uw bouw op Sint Maarten. Antwoord binnen 24u. Telefoon, WhatsApp, e-mail.',
@@ -274,8 +274,8 @@ PAGE_META = {
             'breadcrumb': 'Contact',
         },
         'pt': {
-            'title':      'FTFL CARAÏBES | Contacto & Orçamento Gratuito | Construção Saint-Martin Sint Maarten',
-            'desc':       'Contacte a FTFL CARAÏBES para o seu projeto de construção em Saint-Martin. Orçamento gratuito sem compromisso. Resposta em 24h. Telefone, WhatsApp, email e formulário.',
+            'title':      'FTFL CARAÏBES | Contacto & Orçamento Gratuito',
+            'desc':       'Orçamento gratuito para o seu projeto em Saint-Martin. Resposta em 24h. Telefone, WhatsApp e email.',
             'og_title':   'FTFL CARAÏBES | Contacto & Orçamento Gratuito',
             'og_desc':    'Orçamento gratuito para a sua construção em Saint-Martin. Resposta em 24h. Telefone, WhatsApp, email.',
             'tw_title':   'FTFL CARAÏBES | Orçamento Gratuito Saint-Martin',
@@ -369,10 +369,15 @@ def build_head(lc, slug, meta, og_image):
   <meta id="tw-desc"  name="twitter:description"  content="{meta['tw_desc']}"/>
   <meta name="twitter:image" content="{og_image}"/>
 
-  <!-- FAVICON -->
-  <link rel="icon"             type="image/png" href="/images/Logo FTFL.png"/>
-  <link rel="apple-touch-icon" href="/images/Logo FTFL.png"/>
-  <meta name="theme-color" content="#1B6B35"/>
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicons/favicon-48x48.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <meta name="theme-color" content="#02602A"/>
+  <meta name="msapplication-TileColor" content="#02602A"/>
 
   <!-- FONTS & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
