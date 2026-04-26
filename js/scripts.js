@@ -685,83 +685,6 @@ const i18nData = {
   }
 };
 
-// ── SEO META DATA PAR LANGUE ─────────────────────────────────
-const seoMeta = {
-  fr: {
-    htmlLang:   'fr',
-    ogLocale:   'fr_FR',
-    title:      'FTFL CARAÏBES | Entreprise de Construction Saint-Martin | Terrassement VRD BTP SXM',
-    desc:       'FTFL CARAÏBES, votre entreprise BTP de référence à Saint-Martin (SXM). Terrassement, VRD, aménagement extérieur, second œuvre, multiservices. Interventions côté français et hollandais. Devis gratuit.',
-    keywords:   'construction Saint-Martin, BTP Saint-Martin, terrassement Saint-Martin, travaux Saint-Martin, VRD SXM, aménagement extérieur Saint-Martin, rénovation Saint-Martin, second oeuvre Saint-Martin, entreprise travaux SXM, maçonnerie Saint-Martin, piscine Saint-Martin, menuiserie Saint-Martin, plomberie Saint-Martin, peinture Saint-Martin, devis construction Saint-Martin, Sint Maarten bouw, FTFL Caraïbes, construction piscine Saint-Martin, rénovation villa Saint-Martin, terrassement Sint Maarten, entreprise BTP SXM 97150, travaux bâtiment Saint-Martin, constructeur Saint-Martin, devis travaux gratuit Saint-Martin',
-    ogTitle:    'FTFL CARAÏBES | Entreprise de Construction Saint-Martin',
-    ogDesc:     'Un seul partenaire pour tous vos travaux à Saint-Martin. Terrassement, VRD, aménagement extérieur, second œuvre et multiservices.',
-    twTitle:    'FTFL CARAÏBES | Construction Saint-Martin',
-    twDesc:     'Un seul partenaire pour tous vos travaux à Saint-Martin. Terrassement, VRD, second œuvre, multiservices.',
-  },
-  en: {
-    htmlLang:   'en',
-    ogLocale:   'en_US',
-    title:      'FTFL CARAÏBES | Construction Company Saint Martin Island | Earthworks Civil Works SXM',
-    desc:       'FTFL CARAÏBES, your trusted construction company on Saint Martin island (SXM). Earthworks, civil works, exterior works, finishing works and maintenance services on both the French and Dutch sides. Free quote.',
-    keywords:   'construction company Saint Martin island, building contractor SXM, earthworks Saint Martin, civil works Sint Maarten, renovation Saint Martin, landscaping Saint Martin, pool construction Saint Martin, outdoor development SXM, carpentry plumbing Saint Martin, maintenance Saint Martin island, FTFL Caribbeans, villa renovation Saint Martin, construction quote Saint Martin, property maintenance Sint Maarten, trusted builder Saint Martin island',
-    ogTitle:    'FTFL CARAÏBES | Construction Company Saint Martin',
-    ogDesc:     'One trusted partner for all your construction projects in Saint Martin. Earthworks, civil works, exterior works, finishing works and maintenance services.',
-    twTitle:    'FTFL CARAÏBES | Construction Saint Martin Island',
-    twDesc:     'One trusted partner for your construction projects in Saint Martin SXM. Earthworks, finishing works and maintenance services.',
-  },
-  es: {
-    htmlLang:   'es',
-    ogLocale:   'es_ES',
-    title:      'FTFL CARAÏBES | Empresa de Construcción Saint-Martin | Movimiento de Tierras y Obras SXM',
-    desc:       'FTFL CARAÏBES, su empresa de construcción de referencia en Saint-Martin (SXM). Movimiento de tierras, urbanización y redes, obras exteriores, acabados y multiservicios. Lado francés y holandés. Presupuesto gratuito.',
-    keywords:   'empresa construcción Saint-Martin, obras Saint-Martin, constructora Sint Maarten, terraplenaje Saint-Martin, renovación Saint-Martin, piscina Saint-Martin, jardinería Saint-Martin, fontanería Saint-Martin, pintura Saint-Martin, FTFL Caribe, obras Caribe francés, construcción piscina Saint-Martin, reforma villa Saint-Martin, empresa constructora SXM, presupuesto obras Saint-Martin, mantenimiento inmueble Sint Maarten',
-    ogTitle:    'FTFL CARAÏBES | Empresa de Construcción Saint-Martin',
-    ogDesc:     'Un solo socio para todas sus obras en Saint-Martin. Movimiento de tierras, acondicionamiento exterior, acabados y multiservicios.',
-    twTitle:    'FTFL CARAÏBES | Construcción Saint-Martin SXM',
-    twDesc:     'Un solo socio para todas sus obras en Saint-Martin. Movimiento de tierras, acabados y multiservicios.',
-  },
-  nl: {
-    htmlLang:   'nl',
-    ogLocale:   'nl_NL',
-    title:      'FTFL CARAÏBES | Bouwbedrijf Sint Maarten Saint-Martin | Grondwerken en Infrastructuur SXM',
-    desc:       'FTFL CARAÏBES, uw betrouwbare bouwpartner op Sint Maarten / Saint-Martin (SXM). Grondwerken, infrastructuurwerken, buitenaanleg, afbouwwerken en multidiensten aan de Franse en Nederlandse kant. Gratis offerte.',
-    keywords:   'bouwbedrijf Sint Maarten, aannemer Sint Maarten, grondwerken Sint Maarten, verbouwing Sint Maarten, tuinaanleg Sint Maarten, zwembad Sint Maarten, schilderwerk Sint Maarten, loodgieter Sint Maarten, FTFL Caribbeans, bouw Saint-Martin Frans Carib, zwembad bouwen Sint Maarten, villa renovatie Sint Maarten, aannemer SXM, bouwofferte Sint Maarten, vastgoedonderhoud Sint Maarten',
-    ogTitle:    'FTFL CARAÏBES | Bouwbedrijf Sint Maarten / Saint-Martin',
-    ogDesc:     'Eén partner voor al uw bouwprojecten op Sint Maarten. Grondwerken, buitenaanleg, afbouwwerken en multidiensten.',
-    twTitle:    'FTFL CARAÏBES | Bouwbedrijf Sint Maarten SXM',
-    twDesc:     'Eén partner voor al uw bouwprojecten op Sint Maarten. Grondwerken, afbouw en multidiensten.',
-  },
-  pt: {
-    htmlLang:   'pt',
-    ogLocale:   'pt_PT',
-    title:      'FTFL CARAÏBES | Empresa de Construção Saint-Martin | Terraplenagem Obras SXM',
-    desc:       'FTFL CARAÏBES, a sua empresa de construção de referência em Saint-Martin (SXM). Terraplenagem, infraestruturas e redes, obras exteriores, acabamentos e multisserviços nos lados francês e holandês. Orçamento gratuito.',
-    keywords:   'empresa construção Saint-Martin, obras Saint-Martin, empreiteiro Sint Maarten, terraplenagem Saint-Martin, remodelação Saint-Martin, piscina Saint-Martin, jardinagem Saint-Martin, canalização Saint-Martin, pintura Saint-Martin, FTFL Caribe, construção Caribe francês, construção piscina Saint-Martin, renovação moradia Saint-Martin, empreiteiro SXM, orçamento obras Saint-Martin, manutenção imóvel Sint Maarten',
-    ogTitle:    'FTFL CARAÏBES | Empresa de Construção Saint-Martin',
-    ogDesc:     'Um único parceiro para todas as suas obras em Saint-Martin. Terraplenagem, obras exteriores, acabamentos e multisserviços.',
-    twTitle:    'FTFL CARAÏBES | Construção Saint-Martin SXM',
-    twDesc:     'Um único parceiro para todas as suas obras em Saint-Martin. Terraplenagem, acabamentos e multisserviços.',
-  }
-};
-
-function updateSEOMeta(lang) {
-  const m = seoMeta[lang] || seoMeta.fr;
-  document.documentElement.lang = m.htmlLang;
-  document.title = m.title;
-  document.getElementById('seo-title').textContent = m.title;
-  const setMeta = (id, attr, val) => { const el = document.getElementById(id); if(el) el.setAttribute(attr, val); };
-  setMeta('seo-desc',  'content', m.desc);
-  setMeta('seo-keys',  'content', m.keywords);
-  setMeta('og-title',  'content', m.ogTitle);
-  setMeta('og-desc',   'content', m.ogDesc);
-  setMeta('og-locale', 'content', m.ogLocale);
-  setMeta('tw-title',  'content', m.twTitle);
-  setMeta('tw-desc',   'content', m.twDesc);
-  const _langUrls = {fr:'https://www.ftfl-sxm.com/',en:'https://www.ftfl-sxm.com/en/',es:'https://www.ftfl-sxm.com/es/',nl:'https://www.ftfl-sxm.com/nl/',pt:'https://www.ftfl-sxm.com/pt/'};
-  const canonical = document.getElementById('seo-canonical');
-  if(canonical) canonical.href = _langUrls[lang] || 'https://www.ftfl-sxm.com/';
-  document.querySelector('html').setAttribute('lang', m.htmlLang);
-}
 
 function updateSelectOptions(lang) {
   const opts = {
@@ -908,7 +831,6 @@ function applyLang(lang) {
   });
   localStorage.setItem('ftfl-lang', lang);
   currentLang = lang;
-  updateSEOMeta(lang);
   document.querySelectorAll('.hero-title .line').forEach(line => {
     line.style.opacity = '1'; line.style.transform = 'translateY(0)';
   });
@@ -1102,28 +1024,3 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── LEGAL MODALS ─────────────────────────────────────────────
-function openLegalModal(id) {
-  const modal = document.getElementById(id);
-  if (!modal) return;
-  modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  const closeBtn = modal.querySelector('.legal-close');
-  if (closeBtn) setTimeout(() => closeBtn.focus(), 50);
-}
-
-function closeLegalModal(id) {
-  const modal = document.getElementById(id);
-  if (!modal) return;
-  modal.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.legal-modal.open').forEach(function(m) {
-      m.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  }
-});
