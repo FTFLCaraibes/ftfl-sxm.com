@@ -13,6 +13,17 @@ SOURCE  = os.path.join(BASE_DIR, 'index.html')
 
 ALL_LOCALES = ['fr_FR', 'en_US', 'es_ES', 'nl_NL', 'pt_PT']
 
+# Slugs traduits par langue (doit rester synchronisé avec generate_seo_pages.py)
+SLUG_TRANSLATIONS = {
+    'services':         {'en':'services',       'es':'servicios',           'nl':'diensten',        'pt':'servicos'},
+    'approche':         {'en':'approach',        'es':'enfoque',             'nl':'aanpak',          'pt':'abordagem'},
+    'valeurs':          {'en':'values',          'es':'valores',             'nl':'waarden',         'pt':'valores'},
+    'zone':             {'en':'area',            'es':'zona',                'nl':'werkgebied',      'pt':'zona'},
+    'contact':          {'en':'contact',         'es':'contacto',            'nl':'contact',         'pt':'contacto'},
+    'mentions-legales': {'en':'legal-notice',    'es':'aviso-legal',         'nl':'juridische-info', 'pt':'mencoes-legais'},
+    'confidentialite':  {'en':'privacy-policy',  'es':'politica-privacidad', 'nl':'privacybeleid',   'pt':'politica-privacidade'},
+}
+
 LANGS = {
     'en': {
         'lang':      'en',
@@ -151,9 +162,16 @@ def generate(source: str, meta: dict) -> str:
         f'"https://www.ftfl-sxm.com/{lang}/#'
     )
 
-    # 13. Liens légaux → version langue
-    out = out.replace('href="/mentions-legales/"', f'href="/{lang}/mentions-legales/"', 1)
-    out = out.replace('href="/confidentialite/"',  f'href="/{lang}/confidentialite/"',  1)
+    # 13. Liens légaux → version langue avec slug traduit
+    ml_slug = SLUG_TRANSLATIONS['mentions-legales'][lang]
+    cf_slug = SLUG_TRANSLATIONS['confidentialite'][lang]
+    out = out.replace('href="/mentions-legales/"', f'href="/{lang}/{ml_slug}/"', 1)
+    out = out.replace('href="/confidentialite/"',  f'href="/{lang}/{cf_slug}/"',  1)
+
+    # 14. Section-tag links → version langue avec slug traduit
+    for fr_key in ['services', 'approche', 'valeurs', 'zone', 'contact']:
+        lang_slug = SLUG_TRANSLATIONS[fr_key][lang]
+        out = out.replace(f'href="/{fr_key}/"', f'href="/{lang}/{lang_slug}/"')
 
     # 14. Inject window.__LANG juste avant </head>
     inject = f'  <script>window.__LANG = \'{lang}\';</script>\n'

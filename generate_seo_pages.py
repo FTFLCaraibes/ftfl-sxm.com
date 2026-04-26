@@ -20,6 +20,17 @@ LANG_CONFIGS = {
 ALL_LOCALES = ['fr_FR','en_US','es_ES','nl_NL','pt_PT']
 LANG_ORDER  = ['fr','en','es','nl','pt']
 
+# ── Traduction des slugs par langue ──────────────────────────────
+SLUG_TRANSLATIONS = {
+    'services':          {'fr':'services',        'en':'services',       'es':'servicios',           'nl':'diensten',           'pt':'servicos'},
+    'approche':          {'fr':'approche',         'en':'approach',       'es':'enfoque',             'nl':'aanpak',             'pt':'abordagem'},
+    'valeurs':           {'fr':'valeurs',          'en':'values',         'es':'valores',             'nl':'waarden',            'pt':'valores'},
+    'zone':              {'fr':'zone',             'en':'area',           'es':'zona',                'nl':'werkgebied',         'pt':'zona'},
+    'contact':           {'fr':'contact',          'en':'contact',        'es':'contacto',            'nl':'contact',            'pt':'contacto'},
+    'mentions-legales':  {'fr':'mentions-legales', 'en':'legal-notice',   'es':'aviso-legal',         'nl':'juridische-info',    'pt':'mencoes-legais'},
+    'confidentialite':   {'fr':'confidentialite',  'en':'privacy-policy', 'es':'politica-privacidad', 'nl':'privacybeleid',      'pt':'politica-privacidade'},
+}
+
 # ── Slugs des pages SEO ───────────────────────────────────────────
 PAGE_SLUGS  = ['services','approche','valeurs','zone','contact']
 LEGAL_SLUGS = ['mentions-legales','confidentialite']
@@ -295,10 +306,11 @@ LEGAL_META = {
 # ── Constructeurs de blocs ────────────────────────────────────────
 
 def slug_url(lang_code, slug):
-    """URL canonique pour un slug dans une langue."""
+    """URL canonique pour un slug dans une langue (slug traduit)."""
+    translated = SLUG_TRANSLATIONS[slug][lang_code]
     if lang_code == 'fr':
-        return f'{BASE_URL}/{slug}/'
-    return f'{BASE_URL}/{lang_code}/{slug}/'
+        return f'{BASE_URL}/{translated}/'
+    return f'{BASE_URL}/{lang_code}/{translated}/'
 
 def build_hreflang(slug):
     """Blocs hreflang pour un slug (identiques quelle que soit la langue)."""
@@ -306,7 +318,8 @@ def build_hreflang(slug):
     for lk in LANG_ORDER:
         url = slug_url(lk, slug)
         lines.append(f'  <link rel="alternate" hreflang="{lk}" href="{url}"/>')
-    lines.append(f'  <link rel="alternate" hreflang="x-default" href="{BASE_URL}/{slug}/"/>')
+    fr_slug = SLUG_TRANSLATIONS[slug]['fr']
+    lines.append(f'  <link rel="alternate" hreflang="x-default" href="{BASE_URL}/{fr_slug}/"/>')
     return '\n'.join(lines)
 
 def build_head(lc, slug, meta, og_image):
@@ -388,13 +401,15 @@ def build_navbar(lc, slug):
     lang    = lc['lang']
     home    = lc['home']
     prefix  = lc['prefix']
-    contact_url = f'{prefix}/contact/' if lang != 'fr' else '/contact/'
+    _contact_slug = SLUG_TRANSLATIONS['contact'][lang]
+    contact_url = f'{prefix}/{_contact_slug}/' if lang != 'fr' else f'/{_contact_slug}/'
 
     lang_options = ''
     for lk in LANG_ORDER:
         lv = LANG_CONFIGS[lk]
         active = 'active' if lk == lang else ''
-        other_url = f'/{lk}/{slug}/' if lk != 'fr' else f'/{slug}/'
+        other_slug = SLUG_TRANSLATIONS[slug][lk]
+        other_url = f'/{lk}/{other_slug}/' if lk != 'fr' else f'/{other_slug}/'
         lang_options += f'          <a class="lang-option {active}" data-lang="{lk}" href="{other_url}"><span class="lang-flag">{lv["flag"]}</span> {lv["label"]}</a>\n'
 
     return f"""<!-- PRELOADER -->
@@ -461,7 +476,9 @@ def build_navbar(lc, slug):
 
 def build_footer(lc):
     prefix = lc['prefix']
-    p = lambda s: f'{prefix}/{s}/' if lc['lang'] != 'fr' else f'/{s}/'
+    def p(s):
+        ts = SLUG_TRANSLATIONS[s][lc['lang']]
+        return f'{prefix}/{ts}/' if lc['lang'] != 'fr' else f'/{ts}/'
     return f"""<footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -517,7 +534,8 @@ def content_services(lc):
     home = lc['home']
     home_label = lc['home_label']
     breadcrumb = PAGE_META['services'][lc['lang']]['breadcrumb']
-    contact = f'{lc["prefix"]}/contact/' if lc['lang'] != 'fr' else '/contact/'
+    _cs = SLUG_TRANSLATIONS['contact'][lc['lang']]
+    contact = f'{lc["prefix"]}/{_cs}/' if lc['lang'] != 'fr' else f'/{_cs}/'
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -685,7 +703,8 @@ def content_approche(lc):
     home = lc['home']
     home_label = lc['home_label']
     breadcrumb = PAGE_META['approche'][lc['lang']]['breadcrumb']
-    contact = f'{lc["prefix"]}/contact/' if lc['lang'] != 'fr' else '/contact/'
+    _cs = SLUG_TRANSLATIONS['contact'][lc['lang']]
+    contact = f'{lc["prefix"]}/{_cs}/' if lc['lang'] != 'fr' else f'/{_cs}/'
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -739,8 +758,10 @@ def content_valeurs(lc):
     home = lc['home']
     home_label = lc['home_label']
     breadcrumb = PAGE_META['valeurs'][lc['lang']]['breadcrumb']
-    contact = f'{lc["prefix"]}/contact/' if lc['lang'] != 'fr' else '/contact/'
-    services = f'{lc["prefix"]}/services/' if lc['lang'] != 'fr' else '/services/'
+    _cs = SLUG_TRANSLATIONS['contact'][lc['lang']]
+    contact = f'{lc["prefix"]}/{_cs}/' if lc['lang'] != 'fr' else f'/{_cs}/'
+    _ss = SLUG_TRANSLATIONS['services'][lc['lang']]
+    services = f'{lc["prefix"]}/{_ss}/' if lc['lang'] != 'fr' else f'/{_ss}/'
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -795,7 +816,8 @@ def content_zone(lc):
     home = lc['home']
     home_label = lc['home_label']
     breadcrumb = PAGE_META['zone'][lc['lang']]['breadcrumb']
-    contact = f'{lc["prefix"]}/contact/' if lc['lang'] != 'fr' else '/contact/'
+    _cs = SLUG_TRANSLATIONS['contact'][lc['lang']]
+    contact = f'{lc["prefix"]}/{_cs}/' if lc['lang'] != 'fr' else f'/{_cs}/'
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -1151,7 +1173,8 @@ if __name__ == '__main__':
             content   = CONTENT_BUILDERS[slug](lc)
             html      = build_page(lc, slug, meta, og_image, content, bc_schema)
 
-            rel = f'/{slug}/' if lang_code == 'fr' else f'/{lang_code}/{slug}/'
+            translated = SLUG_TRANSLATIONS[slug][lang_code]
+            rel = f'/{translated}/' if lang_code == 'fr' else f'/{lang_code}/{translated}/'
             write_page(rel, html)
             print(f'[OK] {rel}')
 
@@ -1172,7 +1195,8 @@ if __name__ == '__main__':
             content   = LEGAL_CONTENT_BUILDERS[slug](lc)
             html      = build_page(lc, slug, meta_full, og_image, content, bc_schema)
 
-            rel = f'/{slug}/' if lang_code == 'fr' else f'/{lang_code}/{slug}/'
+            translated = SLUG_TRANSLATIONS[slug][lang_code]
+            rel = f'/{translated}/' if lang_code == 'fr' else f'/{lang_code}/{translated}/'
             write_page(rel, html)
             print(f'[OK] {rel}')
 
