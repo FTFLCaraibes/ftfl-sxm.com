@@ -165,7 +165,7 @@
           </a>
           <a class="contact-item" href="tel:+590690432818">
             <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.2a16 16 0 0 0 6 6l1.56-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.56z"/></svg></div>
-            <div class="contact-item-text"><span class="ci-label" data-i18n="ci.phone">Téléphone</span><span>+590 690 43 28 18</span></div>
+            <div class="contact-item-text"><span class="ci-label" data-i18n="ci.phone">Phone</span><span>+590 690 43 28 18</span></div>
           </a>
           <a class="contact-item" href="mailto:contact@ftfl-sxm.com">
             <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -185,52 +185,52 @@
         <div class="contact-form">
           <h2 class="form-title" data-i18n="form.title">Request a free quote</h2>
           <form id="contactForm" onsubmit="handleSubmit(event)">
-            <input type="hidden" name="_subject" value="Nouvelle demande de devis — FTFL CARAÏBES"/>
+            <input type="hidden" name="_subject" value="New quote request — FTFL CARAÏBES"/>
             <input type="hidden" name="_template" value="box"/>
             <input type="hidden" name="_color" value="1a6b35"/>
             <input type="hidden" name="_captcha" value="false"/>
-            <input type="hidden" name="_autoresponse" value="Merci pour votre demande. L'équipe FTFL CARAÏBES vous contactera dans les 24h."/>
+            <input type="hidden" name="_autoresponse" value="Thank you for your message. The FTFL CARAÏBES team will contact you within 24 hours."/>
             <input type="hidden" name="Heure (Saint-Martin)" id="sxmTime" value=""/>
             <div class="form-row">
               <div class="form-group"><label data-i18n="f.name">Full name *</label><input type="text" name="Nom complet" placeholder="Jean Dupont" required/></div>
               <div class="form-group"><label data-i18n="f.phone">Phone number *</label><input type="tel" name="Telephone" placeholder="+590 690 43 28 18" required/></div>
             </div>
-            <div class="form-group"><label>Email *</label><input type="email" name="Email" placeholder="votre@email.com" required/></div>
+            <div class="form-group"><label>Email *</label><input type="email" name="Email" placeholder="your@email.com" required/></div>
             <div class="form-group">
               <label data-i18n="f.svc">Service required *</label>
               <select name="Service demande" id="selectService" required>
-                <option value="" disabled selected data-i18n="f.svc.ph">Sélectionnez un service</option>
+                <option value="" disabled selected data-i18n="f.svc.ph">Select a service</option>
                 <option value="Terrassement VRD" data-i18n="svc1.h">Earthworks & Civil Works</option>
                 <option value="Amenagement Exterieur" data-i18n="svc2.h">Exterior Works</option>
                 <option value="Second Oeuvre" data-i18n="svc3.h">Finishing & Interior Works</option>
                 <option value="Multiservices Maintenance" data-i18n="svc4.h">Multiservices & Maintenance</option>
-                <option value="Autre / Plusieurs services" data-i18n="f.svc.other">Autre / Plusieurs services</option>
+                <option value="Autre / Plusieurs services" data-i18n="f.svc.other">Other / Multiple services</option>
               </select>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label data-i18n="f.loc">Site location</label>
                 <select name="Localisation" id="selectLocation">
-                  <option value="" disabled selected data-i18n="f.loc.ph">Partie française ou NL ?</option>
+                  <option value="" disabled selected data-i18n="f.loc.ph">French or Dutch side?</option>
                   <option value="Saint-Martin FR" data-i18n="f.loc.fr">Saint-Martin (FR)</option>
                   <option value="Sint Maarten NL" data-i18n="f.loc.nl">Sint Maarten (NL)</option>
-                  <option value="Les deux cotes" data-i18n="f.loc.both">Les deux</option>
-                  <option value="Autre ile" data-i18n="f.loc.other">Autre île</option>
+                  <option value="Les deux cotes" data-i18n="f.loc.both">Both sides</option>
+                  <option value="Autre ile" data-i18n="f.loc.other">Another island</option>
                 </select>
               </div>
               <div class="form-group">
                 <label data-i18n="f.budget">Estimated budget</label>
                 <select name="Budget" id="selectBudget">
-                  <option value="" disabled selected data-i18n="f.budget.ph">Budget indicatif</option>
-                  <option value="Moins de 5000">Moins de 5 000 €</option>
-                  <option value="5000-20000">5 000 – 20 000 €</option>
-                  <option value="20000-50000">20 000 – 50 000 €</option>
-                  <option value="50000-100000">50 000 – 100 000 €</option>
-                  <option value="Plus de 100000">Plus de 100 000 €</option>
+                  <option value="" disabled selected data-i18n="f.budget.ph">Indicative budget</option>
+                  <option value="Moins de 5000">Less than 5,000 €</option>
+                  <option value="5000-20000">5,000 – 20,000 €</option>
+                  <option value="20000-50000">20,000 – 50,000 €</option>
+                  <option value="50000-100000">50,000 – 100,000 €</option>
+                  <option value="Plus de 100000">Over 100,000 €</option>
                 </select>
               </div>
             </div>
-            <div class="form-group"><label data-i18n="f.msg">Project description *</label><textarea name="Description" id="msgTextarea" placeholder="Décrivez votre projet : nature des travaux, superficie, délais, contraintes…" required></textarea></div>
+            <div class="form-group"><label data-i18n="f.msg">Project description *</label><textarea name="Description" id="msgTextarea" placeholder="Tell us about your project: type of works, approximate area, preferred timeline, any specific requirements…" required></textarea></div>
             <button type="submit" class="form-submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               <span data-i18n="f.submit">Send my request</span>

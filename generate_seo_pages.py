@@ -536,6 +536,250 @@ def content_services(lc):
     breadcrumb = PAGE_META['services'][lc['lang']]['breadcrumb']
     _cs = SLUG_TRANSLATIONS['contact'][lc['lang']]
     contact = f'{lc["prefix"]}/{_cs}/' if lc['lang'] != 'fr' else f'/{_cs}/'
+    lang = lc['lang']
+    T = {
+        'fr': {
+            'svc1_tag': 'Terrassement &amp; VRD',
+            'svc1_box_h': 'Exemples de projets réalisés',
+            'svc1_p1': "Avant toute construction, le sol doit être préparé avec rigueur. FTFL CARAÏBES maîtrise l'ensemble des opérations de terrassement propres aux contraintes insulaires de Saint-Martin : sols argileux, pentes prononcées, proximité de la mer, risques cycloniques.",
+            'svc1_p2': "Nos équipes interviennent pour la préparation des fondations, le décaissement des volumes nécessaires, le drainage des eaux pluviales et l'aménagement des voiries. Nous prenons également en charge les réseaux d'assainissement, l'enrochement des talus et la gestion des terres excavées.",
+            'svc1_tags': '<span class="service-tag">Terrassement général</span><span class="service-tag">Décaissement</span><span class="service-tag">Fouilles &amp; fondations</span><span class="service-tag">Voiries &amp; accès</span><span class="service-tag">Assainissement</span><span class="service-tag">Enrochement &amp; talus</span><span class="service-tag">Drainage pluvial</span><span class="service-tag">Réseaux enterrés</span>',
+            'svc1_i1': "Terrassement d'une villa à Orient Bay (1 200 m²) avec création de voie d'accès et pose de citernes",
+            'svc1_i2': "Réseaux VRD pour lotissement à Terres Basses : assainissement, eau, électricité",
+            'svc1_i3': "Drainage et stabilisation d'un talus à Oyster Pond suite aux pluies cycloniques",
+            'svc1_i4': "Création de voiries et parkings pour un complexe hôtelier à Simpson Bay",
+            'svc2_tag': 'Aménagement Extérieur',
+            'svc2_box_h': 'Réalisations emblématiques',
+            'svc2_p1': "L'extérieur est la première impression de votre propriété. FTFL CARAÏBES conçoit et réalise des espaces extérieurs à la hauteur du cadre caribéen : piscines, terrasses, pergolas, jardins paysagers et clôtures, tous conçus pour résister aux vents tropicaux et aux UV intenses de Saint-Martin.",
+            'svc2_p2': "Nous intervenons autant pour de petits aménagements que pour des projets d'envergure (complexes hôteliers, lotissements, villas de prestige). Notre connaissance des plantes locales, des matériaux adaptés au climat tropical et des techniques de gestion de l'eau de pluie nous permet de proposer des solutions durables et esthétiques.",
+            'svc2_tags': '<span class="service-tag">Piscines &amp; spas</span><span class="service-tag">Terrasses &amp; dallages</span><span class="service-tag">Pergolas &amp; ombrières</span><span class="service-tag">Clôtures &amp; portails</span><span class="service-tag">Jardins paysagers</span><span class="service-tag">Éclairage extérieur</span><span class="service-tag">Citernes &amp; récupération eau</span><span class="service-tag">Allées &amp; parkings</span>',
+            'svc2_i1': "Construction d'une piscine à débordement avec terrasse de 200 m² à Terres Basses",
+            'svc2_i2': "Aménagement complet d'un jardin tropical avec pergola, clôture et éclairage à Grand Case",
+            'svc2_i3': "Pose de portail automatique et clôture sur mesure pour villa sécurisée à Philipsburg",
+            'svc2_i4': "Création d'espace BBQ, lounges et abri de voiture à Maho Beach",
+            'svc3_tag': 'Second Œuvre',
+            'svc3_box_h': 'Ce que nos clients nous confient',
+            'svc3_p1': "Le second œuvre regroupe tous les travaux de finition intérieure qui donnent vie à votre bâtiment. FTFL CARAÏBES prend en charge l'ensemble de ces corps d'état, assurant une coordination totale entre artisans et corps de métiers — ce qui vous évite d'avoir à gérer une multitude d'intervenants.",
+            'svc3_p2': "Menuiserie, plomberie, électricité, carrelage, peinture, serrurerie : chaque prestation est exécutée par des professionnels formés aux normes locales (DTU, réglementation des deux côtés de l'île). Nous intervenons aussi bien sur des constructions neuves que sur des rénovations de villas existantes.",
+            'svc3_tags': '<span class="service-tag">Menuiserie bois &amp; alu</span><span class="service-tag">Plomberie &amp; sanitaires</span><span class="service-tag">Électricité &amp; domotique</span><span class="service-tag">Carrelage &amp; revêtements</span><span class="service-tag">Peinture intérieure/extérieure</span><span class="service-tag">Serrurerie &amp; métallerie</span><span class="service-tag">Isolation thermique</span><span class="service-tag">Rénovation complète</span>',
+            'svc3_i1': "Rénovation complète d'une villa de 280 m² à Anse Marcel : plomberie, électricité, carrelage, peinture",
+            'svc3_i2': "Installation de menuiseries aluminium anti-cyclone pour un immeuble commercial à Marigot",
+            'svc3_i3': "Remise aux normes électriques et plomberie pour une location saisonnière à Simpson Bay",
+            'svc3_i4': "Pose de carrelage grand format et douche italienne pour un boutique-hôtel à Dutch Quarter",
+            'svc4_tag': 'Multiservices',
+            'svc4_box_h': 'Nos contrats de maintenance',
+            'svc4_p1': "À Saint-Martin, nombreux sont les propriétaires qui résident à l'étranger une partie de l'année. FTFL CARAÏBES propose une offre de multiservices spécialement pensée pour eux : un interlocuteur unique, disponible, qui surveille, entretient et fait intervenir les bons artisans au bon moment.",
+            'svc4_p2': "Nous gérons également les urgences : fuite d'eau, problème électrique, dommages après tempête. Notre réseau de partenaires locaux nous permet d'intervenir rapidement, avec un reporting photo systématique envoyé au propriétaire. Idéal pour les investisseurs, les hôteliers et les expatriés.",
+            'svc4_tags': '<span class="service-tag">Maintenance préventive</span><span class="service-tag">Dépannage urgence</span><span class="service-tag">Nettoyage &amp; remise en état</span><span class="service-tag">Petits travaux</span><span class="service-tag">Conciergerie propriété</span><span class="service-tag">Suivi photo à distance</span>',
+            'svc4_i1': '<strong style="color:#fff;">Contrat saisonnier</strong> — visite mensuelle, rapport d\'état, petits travaux inclus',
+            'svc4_i2': '<strong style="color:#fff;">Préparation cyclonique</strong> — sécurisation des ouvertures, évacuation du mobilier ext.',
+            'svc4_i3': '<strong style="color:#fff;">Remise en état post-passage</strong> — intervention rapide après intempéries tropicales',
+            'svc4_i4': '<strong style="color:#fff;">Conciergerie travaux</strong> — gestion complète pendant l\'absence des propriétaires',
+            'faq_h': 'Questions fréquentes',
+            'faq1_q': "Intervenez-vous aussi côté hollandais (Sint Maarten) ?",
+            'faq1_a': "Oui, nous intervenons sur toute l'île — partie française (Saint-Martin, collectivité 97150) et partie hollandaise (Sint Maarten). Nos équipes maîtrisent les deux cadres réglementaires et vous simplifient toutes les démarches administratives.",
+            'faq2_q': "Quel est le délai pour obtenir un devis ?",
+            'faq2_a': "Nous nous engageons à revenir vers vous sous 24h ouvrées après réception de votre demande. Pour les projets complexes nécessitant une visite de terrain, nous fixons un rendez-vous dans les 48h et vous remettons un devis détaillé sous 5 jours.",
+            'faq3_q': "Pouvez-vous gérer l'ensemble du chantier, de A à Z ?",
+            'faq3_a': "C'est exactement notre valeur ajoutée. FTFL CARAÏBES peut prendre en charge la totalité d'un projet : terrassement, gros œuvre, aménagement extérieur, second œuvre et maintenance. Un seul contrat, un seul interlocuteur, un seul responsable.",
+            'faq4_q': "Travaillez-vous avec les propriétaires absents de l'île ?",
+            'faq4_a': "Oui, nous avons développé une offre spécifique pour les propriétaires non-résidents : suivi photo quotidien, reporting par WhatsApp ou email, coordination avec les gestionnaires locaux. Vous êtes informé à chaque étape sans avoir à vous déplacer.",
+            'cta': "Demander un devis gratuit — Réponse sous 24h",
+        },
+        'en': {
+            'svc1_tag': 'Earthworks &amp; Civil Works',
+            'svc1_box_h': 'Project highlights',
+            'svc1_p1': "Before any construction begins, the ground must be carefully prepared. FTFL CARAÏBES handles all earthwork operations suited to the island conditions of Saint Martin: clay soils, steep slopes, coastal proximity and hurricane risks.",
+            'svc1_p2': "Our teams handle foundation preparation, excavation works, stormwater drainage and road development. We also take care of sanitation networks, slope protection and management of excavated material.",
+            'svc1_tags': '<span class="service-tag">General earthworks</span><span class="service-tag">Excavation</span><span class="service-tag">Foundations &amp; trenching</span><span class="service-tag">Roads &amp; access</span><span class="service-tag">Drainage systems</span><span class="service-tag">Retaining walls &amp; slopes</span><span class="service-tag">Stormwater drainage</span><span class="service-tag">Underground networks</span>',
+            'svc1_i1': "Earthworks for a villa in Orient Bay (1,200 m²) including access road construction and water tank installation",
+            'svc1_i2': "Civil and utility networks for a housing development in Terres Basses: sewage, water, electricity",
+            'svc1_i3': "Slope drainage and stabilisation in Oyster Pond following cyclonic rainfall",
+            'svc1_i4': "Road and car park construction for a hotel complex in Simpson Bay",
+            'svc2_tag': 'Exterior Works',
+            'svc2_box_h': 'Landmark achievements',
+            'svc2_p1': "The exterior is the first impression your property makes. FTFL CARAÏBES designs and builds outdoor spaces worthy of the Caribbean setting: pools, terraces, pergolas, landscaped gardens and fencing — all engineered to withstand tropical winds and intense UV exposure on Saint Martin.",
+            'svc2_p2': "We handle projects of all sizes — from small garden improvements to large-scale developments (hotel complexes, residential estates, prestige villas). Our knowledge of local plants, climate-resistant materials and rainwater management enables us to deliver lasting, beautiful solutions.",
+            'svc2_tags': '<span class="service-tag">Pools &amp; spas</span><span class="service-tag">Terraces &amp; paving</span><span class="service-tag">Pergolas &amp; shade structures</span><span class="service-tag">Fencing &amp; gates</span><span class="service-tag">Landscaped gardens</span><span class="service-tag">Outdoor lighting</span><span class="service-tag">Rainwater tanks</span><span class="service-tag">Driveways &amp; parking</span>',
+            'svc2_i1': "Infinity pool with 200 m² terrace construction in Terres Basses",
+            'svc2_i2': "Full tropical garden landscaping with pergola, fencing and lighting in Grand Case",
+            'svc2_i3': "Automated gate and custom fencing installation for a gated villa in Philipsburg",
+            'svc2_i4': "BBQ area, lounges and carport creation at Maho Beach",
+            'svc3_tag': 'Finishing Works',
+            'svc3_box_h': 'What our clients trust us with',
+            'svc3_p1': "Finishing works encompass all interior completion trades that bring your building to life. FTFL CARAÏBES manages the entire scope, ensuring complete coordination between trades — so you don't have to deal with a dozen different contractors.",
+            'svc3_p2': "Carpentry, plumbing, electrical work, tiling, painting, locksmithing: every trade is carried out by professionals trained to local standards and regulations on both sides of the island. We work on new builds and villa renovations alike.",
+            'svc3_tags': '<span class="service-tag">Wood &amp; aluminium joinery</span><span class="service-tag">Plumbing &amp; sanitary ware</span><span class="service-tag">Electrical &amp; home automation</span><span class="service-tag">Tiling &amp; wall finishes</span><span class="service-tag">Interior/exterior painting</span><span class="service-tag">Locksmithing &amp; metalwork</span><span class="service-tag">Thermal insulation</span><span class="service-tag">Full renovation</span>',
+            'svc3_i1': "Complete renovation of a 280 m² villa in Anse Marcel: plumbing, electrical, tiling, painting",
+            'svc3_i2': "Anti-cyclone aluminium window and door installation for a commercial building in Marigot",
+            'svc3_i3': "Electrical and plumbing compliance upgrade for a seasonal rental property in Simpson Bay",
+            'svc3_i4': "Large-format tiling and walk-in shower installation for a boutique hotel in Dutch Quarter",
+            'svc4_tag': 'Multiservices',
+            'svc4_box_h': 'Our maintenance contracts',
+            'svc4_p1': "In Saint Martin, many property owners live abroad for part of the year. FTFL CARAÏBES offers a bespoke multiservices package designed specifically for them: a single, available point of contact who monitors, maintains and calls in the right tradespeople at the right time.",
+            'svc4_p2': "We also handle emergencies: water leaks, electrical faults, storm damage. Our local partner network enables fast response with systematic photo reporting sent directly to the owner. Ideal for investors, hoteliers and expatriates.",
+            'svc4_tags': '<span class="service-tag">Preventive maintenance</span><span class="service-tag">Emergency call-out</span><span class="service-tag">Cleaning &amp; reset</span><span class="service-tag">Minor works</span><span class="service-tag">Property concierge</span><span class="service-tag">Remote photo reporting</span>',
+            'svc4_i1': '<strong style="color:#fff;">Seasonal contract</strong> — monthly inspection, condition report, minor works included',
+            'svc4_i2': '<strong style="color:#fff;">Hurricane preparation</strong> — securing openings, removing outdoor furniture',
+            'svc4_i3': '<strong style="color:#fff;">Post-storm restoration</strong> — rapid response after tropical weather events',
+            'svc4_i4': '<strong style="color:#fff;">Works concierge</strong> — full property management while owners are away',
+            'faq_h': 'Frequently asked questions',
+            'faq1_q': "Do you work on the Dutch side (Sint Maarten) too?",
+            'faq1_a': "Yes, we operate across the entire island — on the French side (Saint-Martin, collectivité 97150) and the Dutch side (Sint Maarten). Our teams are fluent in both regulatory frameworks and handle all administrative steps for you.",
+            'faq2_q': "How long does it take to receive a quote?",
+            'faq2_a': "We commit to getting back to you within 24 business hours of receiving your request. For complex projects requiring a site visit, we arrange an appointment within 48 hours and deliver a detailed quote within 5 working days.",
+            'faq3_q': "Can you manage the whole project from start to finish?",
+            'faq3_a': "That is exactly our added value. FTFL CARAÏBES can take full responsibility for an entire project: earthworks, structural work, exterior development, finishing works and maintenance. One single contract, one point of contact, one accountable partner.",
+            'faq4_q': "Do you work with property owners who are off-island?",
+            'faq4_a': "Yes, we have developed a specific service for non-resident owners: daily photo updates, WhatsApp or email reporting, coordination with local property managers. You are kept informed at every stage without needing to travel.",
+            'cta': "Request a free quote — Reply within 24h",
+        },
+        'es': {
+            'svc1_tag': 'Movimiento de tierras y redes',
+            'svc1_box_h': 'Proyectos destacados',
+            'svc1_p1': "Antes de cualquier construcción, el suelo debe ser preparado con rigor. FTFL CARAÏBES domina todas las operaciones de movimiento de tierras adaptadas a las condiciones insulares de Saint-Martin: suelos arcillosos, pendientes pronunciadas, proximidad del mar y riesgos ciclónicos.",
+            'svc1_p2': "Nuestros equipos intervienen en la preparación de cimentaciones, la excavación de los volúmenes necesarios, el drenaje de aguas pluviales y la pavimentación de viales. También nos encargamos de las redes de saneamiento, la protección de taludes y la gestión de tierras excavadas.",
+            'svc1_tags': '<span class="service-tag">Movimiento de tierras general</span><span class="service-tag">Excavación</span><span class="service-tag">Zanjas y cimentaciones</span><span class="service-tag">Viales y accesos</span><span class="service-tag">Saneamiento</span><span class="service-tag">Escollera y taludes</span><span class="service-tag">Drenaje pluvial</span><span class="service-tag">Redes enterradas</span>',
+            'svc1_i1': "Movimiento de tierras para una villa en Orient Bay (1.200 m²) con creación de vía de acceso y colocación de cisternas",
+            'svc1_i2': "Redes de urbanización para un conjunto residencial en Terres Basses: saneamiento, agua, electricidad",
+            'svc1_i3': "Drenaje y estabilización de un talud en Oyster Pond tras las lluvias ciclónicas",
+            'svc1_i4': "Creación de viales y aparcamientos para un complejo hotelero en Simpson Bay",
+            'svc2_tag': 'Obras exteriores',
+            'svc2_box_h': 'Realizaciones emblemáticas',
+            'svc2_p1': "El exterior es la primera impresión que ofrece su propiedad. FTFL CARAÏBES diseña y ejecuta espacios exteriores a la altura del entorno caribeño: piscinas, terrazas, pérgolas, jardines y vallas, todo concebido para resistir los vientos tropicales y la intensa radiación UV de Saint-Martin.",
+            'svc2_p2': "Intervenimos tanto en pequeños trabajos de acondicionamiento como en proyectos de gran envergadura (complejos hoteleros, urbanizaciones, villas de lujo). Nuestro conocimiento de las plantas locales, los materiales adaptados al clima tropical y las técnicas de gestión del agua de lluvia nos permite proponer soluciones duraderas y estéticas.",
+            'svc2_tags': '<span class="service-tag">Piscinas y spas</span><span class="service-tag">Terrazas y pavimentos</span><span class="service-tag">Pérgolas y parasoles</span><span class="service-tag">Vallas y portones</span><span class="service-tag">Jardines paisajísticos</span><span class="service-tag">Iluminación exterior</span><span class="service-tag">Cisternas y recuperación de agua</span><span class="service-tag">Accesos y aparcamientos</span>',
+            'svc2_i1': "Construcción de piscina de desbordamiento con terraza de 200 m² en Terres Basses",
+            'svc2_i2': "Acondicionamiento completo de jardín tropical con pérgola, valla e iluminación en Grand Case",
+            'svc2_i3': "Instalación de portón automático y valla a medida para villa protegida en Philipsburg",
+            'svc2_i4': "Creación de zona BBQ, lounges y cochera en Maho Beach",
+            'svc3_tag': 'Acabados interiores',
+            'svc3_box_h': 'Lo que nuestros clientes nos confían',
+            'svc3_p1': "El segundo cuerpo de obra engloba todos los trabajos de acabado interior que dan vida a su inmueble. FTFL CARAÏBES gestiona la totalidad de estos oficios, asegurando una coordinación completa entre los distintos gremios — lo que le evita tener que gestionar múltiples interlocutores.",
+            'svc3_p2': "Carpintería, fontanería, instalación eléctrica, alicatado, pintura, cerrajería: cada prestación es ejecutada por profesionales formados en las normativas locales de ambos lados de la isla. Intervenimos tanto en obra nueva como en rehabilitación de villas.",
+            'svc3_tags': '<span class="service-tag">Carpintería de madera y aluminio</span><span class="service-tag">Fontanería y sanitarios</span><span class="service-tag">Electricidad y domótica</span><span class="service-tag">Alicatado y revestimientos</span><span class="service-tag">Pintura interior/exterior</span><span class="service-tag">Cerrajería y metalistería</span><span class="service-tag">Aislamiento térmico</span><span class="service-tag">Reforma integral</span>',
+            'svc3_i1': "Reforma integral de una villa de 280 m² en Anse Marcel: fontanería, electricidad, alicatado, pintura",
+            'svc3_i2': "Instalación de carpintería de aluminio anticiclónica para un inmueble comercial en Marigot",
+            'svc3_i3': "Actualización a normativa eléctrica y de fontanería para un alquiler vacacional en Simpson Bay",
+            'svc3_i4': "Colocación de revestimiento de gran formato y ducha italiana para un hotel boutique en Dutch Quarter",
+            'svc4_tag': 'Multiservicios',
+            'svc4_box_h': 'Nuestros contratos de mantenimiento',
+            'svc4_p1': "En Saint-Martin, son numerosos los propietarios que residen en el extranjero parte del año. FTFL CARAÏBES ofrece un servicio de multiservicios especialmente diseñado para ellos: un único interlocutor disponible, que supervisa, mantiene y hace intervenir a los profesionales adecuados en el momento justo.",
+            'svc4_p2': "También gestionamos las urgencias: fuga de agua, problema eléctrico, daños tras tormenta. Nuestra red de socios locales nos permite intervenir con rapidez, con un informe fotográfico sistemático enviado al propietario. Ideal para inversores, hoteleros y expatriados.",
+            'svc4_tags': '<span class="service-tag">Mantenimiento preventivo</span><span class="service-tag">Asistencia de urgencia</span><span class="service-tag">Limpieza y puesta a punto</span><span class="service-tag">Pequeñas obras</span><span class="service-tag">Conserjería de propiedad</span><span class="service-tag">Seguimiento fotográfico remoto</span>',
+            'svc4_i1': '<strong style="color:#fff;">Contrato estacional</strong> — visita mensual, informe de estado, pequeñas obras incluidas',
+            'svc4_i2': '<strong style="color:#fff;">Preparación ciclónica</strong> — protección de huecos, retirada de mobiliario exterior',
+            'svc4_i3': '<strong style="color:#fff;">Puesta a punto tras el paso</strong> — intervención rápida después de temporales tropicales',
+            'svc4_i4': '<strong style="color:#fff;">Conserjería de obras</strong> — gestión completa durante la ausencia de los propietarios',
+            'faq_h': 'Preguntas frecuentes',
+            'faq1_q': "¿Intervienen también en el lado holandés (Sint Maarten)?",
+            'faq1_a': "Sí, intervenimos en toda la isla — parte francesa (Saint-Martin, colectividad 97150) y parte holandesa (Sint Maarten). Nuestros equipos dominan ambos marcos normativos y le simplifican todos los trámites administrativos.",
+            'faq2_q': "¿Cuál es el plazo para obtener un presupuesto?",
+            'faq2_a': "Nos comprometemos a contactarle en un plazo de 24 horas hábiles tras la recepción de su solicitud. Para proyectos complejos que requieran una visita a la obra, fijamos una cita en 48 horas y le remitimos un presupuesto detallado en 5 días.",
+            'faq3_q': "¿Pueden gestionar la totalidad de la obra, de principio a fin?",
+            'faq3_a': "Esa es exactamente nuestra propuesta de valor. FTFL CARAÏBES puede hacerse cargo de la totalidad de un proyecto: movimiento de tierras, estructura, acondicionamiento exterior, acabados y mantenimiento. Un solo contrato, un solo interlocutor, un solo responsable.",
+            'faq4_q': "¿Trabajan con propietarios que están fuera de la isla?",
+            'faq4_a': "Sí, hemos desarrollado una oferta específica para los propietarios no residentes: seguimiento fotográfico diario, informes por WhatsApp o correo electrónico, coordinación con los gestores locales. Usted estará informado en cada etapa sin necesidad de desplazarse.",
+            'cta': "Solicitar presupuesto gratuito — Respuesta en 24h",
+        },
+        'nl': {
+            'svc1_tag': 'Grondwerken &amp; Infrastructuur',
+            'svc1_box_h': 'Projectreferenties',
+            'svc1_p1': "Vóór elke bouw moet de grond nauwkeurig worden voorbereid. FTFL CARAÏBES beheerst alle grondwerkzaamheden afgestemd op de eilandspecifieke omstandigheden van Saint-Martin: kleibodems, steile hellingen, kustligging en orkaankansen.",
+            'svc1_p2': "Onze ploegen verzorgen de fundering, ontgravingen, regenwaterafvoer en wegenwerken. Wij nemen ook rioleringen, taludbeveiliging en afvoer van vrijgekomen grond voor onze rekening.",
+            'svc1_tags': '<span class="service-tag">Algemene grondwerken</span><span class="service-tag">Ontgraving</span><span class="service-tag">Funderingen &amp; sleuven</span><span class="service-tag">Wegen &amp; toegangen</span><span class="service-tag">Rioleringssystemen</span><span class="service-tag">Steenbestorting &amp; taluds</span><span class="service-tag">Regenwaterafvoer</span><span class="service-tag">Ondergrondse netwerken</span>',
+            'svc1_i1': "Grondwerken voor een villa in Orient Bay (1.200 m²) met aanleg van toegangsweg en plaatsing van watertanks",
+            'svc1_i2': "Infrastructuurnetwerken voor een woonwijk in Terres Basses: riolering, water, elektriciteit",
+            'svc1_i3': "Drainage en stabilisatie van een talud in Oyster Pond na tropische stortregens",
+            'svc1_i4': "Aanleg van wegen en parkings voor een hotelcomplex in Simpson Bay",
+            'svc2_tag': 'Buitenaanleg',
+            'svc2_box_h': 'Kenmerkende realisaties',
+            'svc2_p1': "De buitenkant is de eerste indruk van uw eigendom. FTFL CARAÏBES ontwerpt en realiseert buitenruimtes die passen bij de Caribische omgeving: zwembaden, terrassen, pergola's, tuinen en omheiningen, allemaal ontworpen om tropische winden en intense uv-straling op Saint-Martin te weerstaan.",
+            'svc2_p2': "Wij voeren projecten uit van elk formaat — van kleine tuinaanleg tot grootschalige ontwikkelingen (hotelcomplexen, verkavelingen, prestigieuze villa's). Onze kennis van lokale planten, klimaatbestendige materialen en regenwaterbeheer stelt ons in staat duurzame en esthetische oplossingen te bieden.",
+            'svc2_tags': '<span class="service-tag">Zwembaden &amp; spa\'s</span><span class="service-tag">Terrassen &amp; bestrating</span><span class="service-tag">Pergola\'s &amp; schaduwstructuren</span><span class="service-tag">Omheiningen &amp; poorten</span><span class="service-tag">Aangelegde tuinen</span><span class="service-tag">Buitenverlichting</span><span class="service-tag">Regenwatertanks</span><span class="service-tag">Opritten &amp; parkings</span>',
+            'svc2_i1': "Bouw van een overloopzwembad met 200 m² terras in Terres Basses",
+            'svc2_i2': "Volledige aanleg van tropische tuin met pergola, omheining en verlichting in Grand Case",
+            'svc2_i3': "Plaatsing van automatische poort en maatwerkafscheiding voor beveiligde villa in Philipsburg",
+            'svc2_i4': "Aanleg van BBQ-ruimte, loungegebieden en carport in Maho Beach",
+            'svc3_tag': 'Afbouwwerken',
+            'svc3_box_h': 'Wat onze klanten ons toevertrouwen',
+            'svc3_p1': "Afbouwwerken omvatten alle binnenafwerkingen die uw gebouw tot leven brengen. FTFL CARAÏBES neemt de volledige scope op zich en zorgt voor totale coördinatie tussen de vakdisciplines — zodat u niet tientallen aannemers hoeft te beheren.",
+            'svc3_p2': "Schrijnwerk, loodgieterij, elektriciteit, tegelwerk, schilderwerk, sleutelwerk: elke specialiteit wordt uitgevoerd door professionals opgeleid aan de lokale normen van beide kanten van het eiland. Wij werken zowel op nieuwbouw als op renovatie van villa's.",
+            'svc3_tags': '<span class="service-tag">Hout- &amp; aluminiumschrijwerk</span><span class="service-tag">Loodgieterij &amp; sanitair</span><span class="service-tag">Elektriciteit &amp; domotica</span><span class="service-tag">Tegelwerk &amp; wandbekleding</span><span class="service-tag">Binnen-/buitenschilderwerk</span><span class="service-tag">Hang-, sluit- &amp; metaalwerk</span><span class="service-tag">Thermische isolatie</span><span class="service-tag">Volledige renovatie</span>',
+            'svc3_i1': "Volledige renovatie van een villa van 280 m² in Anse Marcel: loodgieterij, elektriciteit, tegelwerk, schilderwerk",
+            'svc3_i2': "Installatie van anti-orkaan aluminium schrijnwerk voor een commercieel gebouw in Marigot",
+            'svc3_i3': "Elektrische en loodgieterijconformiteitsupgrade voor een vakantieverhuurwoning in Simpson Bay",
+            'svc3_i4': "Plaatsing van grootformaat tegels en inloopdouche voor een boutique hotel in Dutch Quarter",
+            'svc4_tag': 'Multidiensten',
+            'svc4_box_h': 'Onze onderhoudscontracten',
+            'svc4_p1': "Op Saint-Martin wonen veel eigenaren een deel van het jaar in het buitenland. FTFL CARAÏBES biedt een op maat gemaakt multidiensten-pakket speciaal voor hen: één beschikbaar aanspreekpunt dat toeziet, onderhoudt en de juiste vaklieden op het juiste moment inschakelt.",
+            'svc4_p2': "Wij behandelen ook noodgevallen: waterlekkages, elektrische problemen, stormbeschadigingen. Ons netwerk van lokale partners stelt ons in staat snel in te grijpen, met systematisch fotoverslag rechtstreeks naar de eigenaar. Ideaal voor investeerders, hoteliers en expats.",
+            'svc4_tags': '<span class="service-tag">Preventief onderhoud</span><span class="service-tag">Dringende interventie</span><span class="service-tag">Reiniging &amp; herstel</span><span class="service-tag">Kleine werken</span><span class="service-tag">Vastgoedconciërge</span><span class="service-tag">Fotobeheer op afstand</span>',
+            'svc4_i1': '<strong style="color:#fff;">Seizoenscontract</strong> — maandelijkse inspectie, toestandsrapport, kleine werken inbegrepen',
+            'svc4_i2': '<strong style="color:#fff;">Orkaanvoorbereiding</strong> — afdichten van openingen, wegzetten van buitenmeubilair',
+            'svc4_i3': '<strong style="color:#fff;">Herstel na doortocht</strong> — snelle interventie na tropische stormen',
+            'svc4_i4': '<strong style="color:#fff;">Werkenconciërge</strong> — volledig vastgoedbeheer tijdens afwezigheid van eigenaren',
+            'faq_h': 'Veelgestelde vragen',
+            'faq1_q': "Werkt u ook aan de Nederlandse kant (Sint Maarten)?",
+            'faq1_a': "Ja, wij werken op het hele eiland — Frans gedeelte (Saint-Martin, collectivité 97150) en Nederlands gedeelte (Sint Maarten). Onze teams zijn vertrouwd met beide regelgevingskaders en regelen alle administratieve stappen voor u.",
+            'faq2_q': "Hoe lang duurt het om een offerte te ontvangen?",
+            'faq2_a': "Wij verbinden er ons toe u binnen 24 werkuren na ontvangst van uw aanvraag terug te contacteren. Voor complexe projecten waarvoor een plaatsbezoek nodig is, plannen we een afspraak binnen 48 uur en leveren we een gedetailleerde offerte binnen 5 werkdagen.",
+            'faq3_q': "Kunt u het volledige project van A tot Z beheren?",
+            'faq3_a': "Dat is precies onze toegevoegde waarde. FTFL CARAÏBES kan de volledige verantwoordelijkheid nemen voor een project: grondwerken, ruwbouw, buitenaanleg, afbouwwerken en onderhoud. Eén contract, één aanspreekpunt, één verantwoordelijke partner.",
+            'faq4_q': "Werkt u samen met eigenaren die niet op het eiland aanwezig zijn?",
+            'faq4_a': "Ja, wij hebben een specifieke dienst ontwikkeld voor niet-residerende eigenaren: dagelijkse fotoupdates, WhatsApp of e-mailrapporten, coördinatie met lokale vastgoedbeheerders. U wordt in elke fase op de hoogte gehouden zonder dat u zelf aanwezig moet zijn.",
+            'cta': "Gratis offerte aanvragen — Antwoord binnen 24u",
+        },
+        'pt': {
+            'svc1_tag': 'Terraplenagem e infraestruturas',
+            'svc1_box_h': 'Projetos em destaque',
+            'svc1_p1': "Antes de qualquer construção, o solo deve ser preparado com rigor. A FTFL CARAÏBES domina todas as operações de terraplenagem adaptadas às condições insulares de Saint-Martin: solos argilosos, declives acentuados, proximidade do mar e riscos ciclónicos.",
+            'svc1_p2': "As nossas equipas intervêm na preparação de fundações, na escavação dos volumes necessários, na drenagem de águas pluviais e no arranjo de acessos. Tratamos também das redes de saneamento, da proteção de taludes e da gestão de terras escavadas.",
+            'svc1_tags': '<span class="service-tag">Terraplenagem geral</span><span class="service-tag">Escavação</span><span class="service-tag">Valas e fundações</span><span class="service-tag">Arruamentos e acessos</span><span class="service-tag">Saneamento</span><span class="service-tag">Enrocamento e taludes</span><span class="service-tag">Drenagem pluvial</span><span class="service-tag">Redes enterradas</span>',
+            'svc1_i1': "Terraplenagem de uma moradia em Orient Bay (1 200 m²) com criação de via de acesso e colocação de cisternas",
+            'svc1_i2': "Redes de infraestruturas para um loteamento em Terres Basses: saneamento, água, eletricidade",
+            'svc1_i3': "Drenagem e estabilização de um talude em Oyster Pond após chuvas ciclónicas",
+            'svc1_i4': "Criação de arruamentos e estacionamentos para um complexo hoteleiro em Simpson Bay",
+            'svc2_tag': 'Obras exteriores e paisagismo',
+            'svc2_box_h': 'Realizações emblemáticas',
+            'svc2_p1': "O exterior é a primeira impressão do seu imóvel. A FTFL CARAÏBES concebe e realiza espaços exteriores à altura do enquadramento caribenho: piscinas, terraços, pérgolas, jardins e vedações — tudo concebido para resistir aos ventos tropicais e à intensa radiação UV em Saint-Martin.",
+            'svc2_p2': "Intervenimos tanto em pequenos arranjos como em projetos de grande envergadura (complexos hoteleiros, urbanizações, villas de prestígio). O nosso conhecimento das plantas locais, dos materiais adaptados ao clima tropical e das técnicas de gestão de águas pluviais permite-nos propor soluções duradouras e esteticamente cuidadas.",
+            'svc2_tags': '<span class="service-tag">Piscinas e spas</span><span class="service-tag">Terraços e pavimentos</span><span class="service-tag">Pérgolas e coberturas</span><span class="service-tag">Vedações e portões</span><span class="service-tag">Jardins paisagísticos</span><span class="service-tag">Iluminação exterior</span><span class="service-tag">Cisternas e recuperação de água</span><span class="service-tag">Acessos e estacionamentos</span>',
+            'svc2_i1': "Construção de piscina de transbordo com terraço de 200 m² em Terres Basses",
+            'svc2_i2': "Arranjo completo de jardim tropical com pérgola, vedação e iluminação em Grand Case",
+            'svc2_i3': "Montagem de portão automático e vedação à medida para moradia segura em Philipsburg",
+            'svc2_i4': "Criação de espaço BBQ, lounges e cobertura de automóvel em Maho Beach",
+            'svc3_tag': 'Obras de Acabamento',
+            'svc3_box_h': 'O que os nossos clientes nos confiam',
+            'svc3_p1': "As obras de acabamento englobam todos os trabalhos de conclusão interior que dão vida ao seu edifício. A FTFL CARAÏBES gere a totalidade destas especialidades, assegurando uma coordenação completa entre artesãos e ofícios — poupando-lhe a gestão de múltiplos intervenientes.",
+            'svc3_p2': "Carpintaria, canalização, eletricidade, revestimentos, pintura, serralharia: cada especialidade é executada por profissionais formados de acordo com as normas locais dos dois lados da ilha. Trabalhamos tanto em construção nova como em renovação de moradias.",
+            'svc3_tags': '<span class="service-tag">Carpintaria em madeira e alumínio</span><span class="service-tag">Canalização e sanitários</span><span class="service-tag">Eletricidade e domótica</span><span class="service-tag">Revestimentos e cerâmica</span><span class="service-tag">Pintura interior/exterior</span><span class="service-tag">Serralharia e trabalhos em metal</span><span class="service-tag">Isolamento térmico</span><span class="service-tag">Renovação completa</span>',
+            'svc3_i1': "Renovação completa de uma moradia de 280 m² em Anse Marcel: canalização, eletricidade, revestimentos, pintura",
+            'svc3_i2': "Instalação de caixilharia de alumínio anticiclone para um edifício comercial em Marigot",
+            'svc3_i3': "Atualização de conformidade elétrica e de canalização para um alojamento de férias em Simpson Bay",
+            'svc3_i4': "Assentamento de revestimento de grande formato e duche italiano para um hotel boutique em Dutch Quarter",
+            'svc4_tag': 'Multisserviços',
+            'svc4_box_h': 'Os nossos contratos de manutenção',
+            'svc4_p1': "Em Saint-Martin, muitos proprietários residem no estrangeiro durante parte do ano. A FTFL CARAÏBES oferece um serviço de multisserviços especialmente concebido para eles: um único interlocutor disponível, que monitoriza, mantém e chama os profissionais certos no momento adequado.",
+            'svc4_p2': "Tratamos também das urgências: fuga de água, problema elétrico, danos após tempestade. A nossa rede de parceiros locais permite intervir rapidamente, com relatório fotográfico sistemático enviado diretamente ao proprietário. Ideal para investidores, hoteleiros e expatriados.",
+            'svc4_tags': '<span class="service-tag">Manutenção preventiva</span><span class="service-tag">Assistência de urgência</span><span class="service-tag">Limpeza e reposição</span><span class="service-tag">Pequenos trabalhos</span><span class="service-tag">Conciergerie imobiliária</span><span class="service-tag">Acompanhamento fotográfico remoto</span>',
+            'svc4_i1': '<strong style="color:#fff;">Contrato sazonal</strong> — visita mensal, relatório de estado, pequenos trabalhos incluídos',
+            'svc4_i2': '<strong style="color:#fff;">Preparação ciclónica</strong> — proteção de aberturas, remoção do mobiliário exterior',
+            'svc4_i3': '<strong style="color:#fff;">Reposição pós-ciclone</strong> — intervenção rápida após intempéries tropicais',
+            'svc4_i4': '<strong style="color:#fff;">Conciergerie de obras</strong> — gestão completa durante a ausência dos proprietários',
+            'faq_h': 'Perguntas frequentes',
+            'faq1_q': "Também intervêm do lado holandês (Sint Maarten)?",
+            'faq1_a': "Sim, intervimos em toda a ilha — lado francês (Saint-Martin, coletividade 97150) e lado holandês (Sint Maarten). As nossas equipas dominam ambos os quadros regulamentares e simplificam todos os procedimentos administrativos.",
+            'faq2_q': "Qual é o prazo para obter um orçamento?",
+            'faq2_a': "Comprometemo-nos a responder no prazo de 24 horas úteis após a receção do seu pedido. Para projetos complexos que exijam uma visita ao local, marcamos uma reunião em 48 horas e entregamos um orçamento detalhado em 5 dias.",
+            'faq3_q': "Podem gerir toda a obra do início ao fim?",
+            'faq3_a': "Essa é exatamente a nossa mais-valia. A FTFL CARAÏBES pode assumir a responsabilidade total de um projeto: terraplenagem, obra bruta, arranjos exteriores, acabamentos e manutenção. Um único contrato, um único interlocutor, um único responsável.",
+            'faq4_q': "Trabalham com proprietários que estão ausentes da ilha?",
+            'faq4_a': "Sim, desenvolvemos uma oferta específica para proprietários não residentes: acompanhamento fotográfico diário, relatórios por WhatsApp ou e-mail, coordenação com os gestores locais. É mantido informado em cada etapa sem necessidade de se deslocar.",
+            'cta': "Pedir orçamento gratuito — Resposta em 24h",
+        },
+    }
+    t = T[lang]
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -559,25 +803,22 @@ def content_services(lc):
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
           <span style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:rgba(61,168,100,.2);line-height:1;">01</span>
-          <span class="section-tag" style="margin:0;">Terrassement & VRD</span>
+          <span class="section-tag" style="margin:0;">{t['svc1_tag']}</span>
         </div>
-        <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc1.h">Terrassement & VRD</h2>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">Avant toute construction, le sol doit être préparé avec rigueur. FTFL CARAÏBES maîtrise l'ensemble des opérations de terrassement propres aux contraintes insulaires de Saint-Martin : sols argileux, pentes prononcées, proximité de la mer, risques cycloniques.</p>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">Nos équipes interviennent pour la préparation des fondations, le décaissement des volumes nécessaires, le drainage des eaux pluviales et l'aménagement des voiries. Nous prenons également en charge les réseaux d'assainissement, l'enrochement des talus et la gestion des terres excavées.</p>
+        <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc1.h">Terrassement &amp; VRD</h2>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">{t['svc1_p1']}</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">{t['svc1_p2']}</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="service-tag">Terrassement général</span><span class="service-tag">Décaissement</span>
-          <span class="service-tag">Fouilles & fondations</span><span class="service-tag">Voiries & accès</span>
-          <span class="service-tag">Assainissement</span><span class="service-tag">Enrochement & talus</span>
-          <span class="service-tag">Drainage pluvial</span><span class="service-tag">Réseaux enterrés</span>
+          {t['svc1_tags']}
         </div>
       </div>
       <div style="background:rgba(61,168,100,.05);border:1px solid rgba(61,168,100,.15);border-radius:20px;padding:36px;">
-        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">Exemples de projets réalisés</h3>
+        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">{t['svc1_box_h']}</h3>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Terrassement d'une villa à Orient Bay (1 200 m²) avec création de voie d'accès et pose de citernes</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Réseaux VRD pour lotissement à Terres Basses : assainissement, eau, électricité</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Drainage et stabilisation d'un talus à Oyster Pond suite aux pluies cycloniques</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Création de voiries et parkings pour un complexe hôtelier à Simpson Bay</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc1_i1']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc1_i2']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc1_i3']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc1_i4']}</span></li>
         </ul>
       </div>
     </div>
@@ -585,27 +826,24 @@ def content_services(lc):
     <!-- ── SERVICE 02 ─────────────────────────────────────── -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:80px 0;border-bottom:1px solid rgba(255,255,255,.07);" data-aos="fade-up">
       <div style="background:rgba(61,168,100,.05);border:1px solid rgba(61,168,100,.15);border-radius:20px;padding:36px;">
-        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">Réalisations emblématiques</h3>
+        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">{t['svc2_box_h']}</h3>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Construction d'une piscine à débordement avec terrasse de 200 m² à Terres Basses</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Aménagement complet d'un jardin tropical avec pergola, clôture et éclairage à Grand Case</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Pose de portail automatique et clôture sur mesure pour villa sécurisée à Philipsburg</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Création d'espace BBQ, lounges et abri de voiture à Maho Beach</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc2_i1']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc2_i2']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc2_i3']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc2_i4']}</span></li>
         </ul>
       </div>
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
           <span style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:rgba(61,168,100,.2);line-height:1;">02</span>
-          <span class="section-tag" style="margin:0;">Aménagement Extérieur</span>
+          <span class="section-tag" style="margin:0;">{t['svc2_tag']}</span>
         </div>
         <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc2.h">Aménagement Extérieur</h2>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">L'extérieur est la première impression de votre propriété. FTFL CARAÏBES conçoit et réalise des espaces extérieurs à la hauteur du cadre caribéen : piscines, terrasses, pergolas, jardins paysagers et clôtures, tous conçus pour résister aux vents tropicaux et aux UV intenses de Saint-Martin.</p>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">Nous intervenons autant pour de petits aménagements que pour des projets d'envergure (complexes hôteliers, lotissements, villas de prestige). Notre connaissance des plantes locales, des matériaux adaptés au climat tropical et des techniques de gestion de l'eau de pluie nous permet de proposer des solutions durables et esthétiques.</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">{t['svc2_p1']}</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">{t['svc2_p2']}</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="service-tag">Piscines & spas</span><span class="service-tag">Terrasses & dallages</span>
-          <span class="service-tag">Pergolas & ombrières</span><span class="service-tag">Clôtures & portails</span>
-          <span class="service-tag">Jardins paysagers</span><span class="service-tag">Éclairage extérieur</span>
-          <span class="service-tag">Citernes & récupération eau</span><span class="service-tag">Allées & parkings</span>
+          {t['svc2_tags']}
         </div>
       </div>
     </div>
@@ -615,25 +853,22 @@ def content_services(lc):
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
           <span style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:rgba(61,168,100,.2);line-height:1;">03</span>
-          <span class="section-tag" style="margin:0;">Second Œuvre</span>
+          <span class="section-tag" style="margin:0;">{t['svc3_tag']}</span>
         </div>
         <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc3.h">Travaux de Second Œuvre</h2>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">Le second œuvre regroupe tous les travaux de finition intérieure qui donnent vie à votre bâtiment. FTFL CARAÏBES prend en charge l'ensemble de ces corps d'état, assurant une coordination totale entre artisans et corps de métiers — ce qui vous évite d'avoir à gérer une multitude d'intervenants.</p>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">Menuiserie, plomberie, électricité, carrelage, peinture, serrurerie : chaque prestation est exécutée par des professionnels formés aux normes locales (DTU, réglementation des deux côtés de l'île). Nous intervenons aussi bien sur des constructions neuves que sur des rénovations de villas existantes.</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">{t['svc3_p1']}</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">{t['svc3_p2']}</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="service-tag">Menuiserie bois & alu</span><span class="service-tag">Plomberie & sanitaires</span>
-          <span class="service-tag">Électricité & domotique</span><span class="service-tag">Carrelage & revêtements</span>
-          <span class="service-tag">Peinture intérieure/extérieure</span><span class="service-tag">Serrurerie & métallerie</span>
-          <span class="service-tag">Isolation thermique</span><span class="service-tag">Rénovation complète</span>
+          {t['svc3_tags']}
         </div>
       </div>
       <div style="background:rgba(61,168,100,.05);border:1px solid rgba(61,168,100,.15);border-radius:20px;padding:36px;">
-        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">Ce que nos clients nous confient</h3>
+        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">{t['svc3_box_h']}</h3>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Rénovation complète d'une villa de 280 m² à Anse Marcel : plomberie, électricité, carrelage, peinture</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Installation de menuiseries aluminium anti-cyclone pour un immeuble commercial à Marigot</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Remise aux normes électriques et plomberie pour une location saisonnière à Simpson Bay</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">Pose de carrelage grand format et douche italienne pour un boutique-hôtel à Dutch Quarter</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc3_i1']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc3_i2']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc3_i3']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc3_i4']}</span></li>
         </ul>
       </div>
     </div>
@@ -641,26 +876,24 @@ def content_services(lc):
     <!-- ── SERVICE 04 ─────────────────────────────────────── -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:80px 0;" data-aos="fade-up">
       <div style="background:rgba(61,168,100,.05);border:1px solid rgba(61,168,100,.15);border-radius:20px;padding:36px;">
-        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">Nos contrats de maintenance</h3>
+        <h3 style="font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:20px;color:var(--orange);">{t['svc4_box_h']}</h3>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;"><strong style="color:#fff;">Contrat saisonnier</strong> — visite mensuelle, rapport d'état, petits travaux inclus</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;"><strong style="color:#fff;">Préparation cyclonique</strong> — sécurisation des ouvertures, évacuation du mobilier ext.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;"><strong style="color:#fff;">Remise en état post-passage</strong> — intervention rapide après intempéries tropicales</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;"><strong style="color:#fff;">Conciergerie travaux</strong> — gestion complète pendant l'absence des propriétaires</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc4_i1']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc4_i2']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc4_i3']}</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><svg style="flex-shrink:0;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span style="color:var(--gray-light);line-height:1.6;">{t['svc4_i4']}</span></li>
         </ul>
       </div>
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
           <span style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:rgba(61,168,100,.2);line-height:1;">04</span>
-          <span class="section-tag" style="margin:0;">Multiservices</span>
+          <span class="section-tag" style="margin:0;">{t['svc4_tag']}</span>
         </div>
-        <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc4.h">Multiservices & Maintenance</h2>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">À Saint-Martin, nombreux sont les propriétaires qui résident à l'étranger une partie de l'année. FTFL CARAÏBES propose une offre de multiservices spécialement pensée pour eux : un interlocuteur unique, disponible, qui surveille, entretient et fait intervenir les bons artisans au bon moment.</p>
-        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">Nous gérons également les urgences : fuite d'eau, problème électrique, dommages après tempête. Notre réseau de partenaires locaux nous permet d'intervenir rapidement, avec un reporting photo systématique envoyé au propriétaire. Idéal pour les investisseurs, les hôteliers et les expatriés.</p>
+        <h2 style="font-family:var(--font-head);font-size:1.9rem;font-weight:800;margin-bottom:16px;" data-i18n="svc4.h">Multiservices &amp; Maintenance</h2>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:20px;">{t['svc4_p1']}</p>
+        <p style="color:var(--gray-light);line-height:1.85;margin-bottom:24px;">{t['svc4_p2']}</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="service-tag">Maintenance préventive</span><span class="service-tag">Dépannage urgence</span>
-          <span class="service-tag">Nettoyage & remise en état</span><span class="service-tag">Petits travaux</span>
-          <span class="service-tag">Conciergerie propriété</span><span class="service-tag">Suivi photo à distance</span>
+          {t['svc4_tags']}
         </div>
       </div>
     </div>
@@ -670,29 +903,29 @@ def content_services(lc):
 <!-- ── FAQ SERVICES ──────────────────────────────────────────── -->
 <section class="section" style="background:rgba(255,255,255,.02);padding:80px 0;">
   <div class="container" style="max-width:800px;">
-    <h2 style="font-family:var(--font-head);font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:48px;" data-aos="fade-up">Questions fréquentes</h2>
+    <h2 style="font-family:var(--font-head);font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:48px;" data-aos="fade-up">{t['faq_h']}</h2>
     <div style="display:flex;flex-direction:column;gap:16px;" data-aos="fade-up">
       <details style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;">
-        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Intervenez-vous aussi côté hollandais (Sint Maarten) ? <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
-        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">Oui, nous intervenons sur toute l'île — partie française (Saint-Martin, collectivité 97150) et partie hollandaise (Sint Maarten). Nos équipes maîtrisent les deux cadres réglementaires et vous simplifient toutes les démarches administratives.</p>
+        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">{t['faq1_q']} <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
+        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">{t['faq1_a']}</p>
       </details>
       <details style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;">
-        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Quel est le délai pour obtenir un devis ? <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
-        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">Nous nous engageons à revenir vers vous sous 24h ouvrées après réception de votre demande. Pour les projets complexes nécessitant une visite de terrain, nous fixons un rendez-vous dans les 48h et vous remettons un devis détaillé sous 5 jours.</p>
+        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">{t['faq2_q']} <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
+        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">{t['faq2_a']}</p>
       </details>
       <details style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;">
-        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Pouvez-vous gérer l'ensemble du chantier, de A à Z ? <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
-        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">C'est exactement notre valeur ajoutée. FTFL CARAÏBES peut prendre en charge la totalité d'un projet : terrassement, gros œuvre, aménagement extérieur, second œuvre et maintenance. Un seul contrat, un seul interlocuteur, un seul responsable.</p>
+        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">{t['faq3_q']} <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
+        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">{t['faq3_a']}</p>
       </details>
       <details style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;">
-        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Travaillez-vous avec les propriétaires absents de l'île ? <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
-        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">Oui, nous avons développé une offre spécifique pour les propriétaires non-résidents : suivi photo quotidien, reporting par WhatsApp ou email, coordination avec les gestionnaires locaux. Vous êtes informé à chaque étape sans avoir à vous déplacer.</p>
+        <summary style="font-family:var(--font-head);font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">{t['faq4_q']} <span style="color:var(--orange);font-size:1.4rem;line-height:1;">+</span></summary>
+        <p style="color:var(--gray-light);margin-top:16px;line-height:1.8;">{t['faq4_a']}</p>
       </details>
     </div>
     <div style="text-align:center;margin-top:48px;" data-aos="fade-up">
       <a href="{contact}" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        Demander un devis gratuit — Réponse sous 24h
+        {t['cta']}
       </a>
     </div>
   </div>
@@ -880,6 +1113,65 @@ def content_contact(lc):
     home = lc['home']
     home_label = lc['home_label']
     breadcrumb = PAGE_META['contact'][lc['lang']]['breadcrumb']
+    lang = lc['lang']
+    CT = {
+        'fr': {
+            'subject': 'Nouvelle demande de devis — FTFL CARAÏBES',
+            'autoresponse': "Merci pour votre demande. L'équipe FTFL CARAÏBES vous contactera dans les 24h.",
+            'ph_email': 'votre@email.com',
+            'ph_msg': 'Décrivez votre projet : nature des travaux, superficie, délais souhaités, contraintes particulières…',
+            'budget_lt5': 'Moins de 5 000 €',
+            'budget_5_20': '5 000 – 20 000 €',
+            'budget_20_50': '20 000 – 50 000 €',
+            'budget_50_100': '50 000 – 100 000 €',
+            'budget_gt100': 'Plus de 100 000 €',
+        },
+        'en': {
+            'subject': 'New quote request — FTFL CARAÏBES',
+            'autoresponse': 'Thank you for your message. The FTFL CARAÏBES team will contact you within 24 hours.',
+            'ph_email': 'your@email.com',
+            'ph_msg': 'Tell us about your project: type of works, approximate area, preferred timeline, any specific requirements…',
+            'budget_lt5': 'Less than 5,000 €',
+            'budget_5_20': '5,000 – 20,000 €',
+            'budget_20_50': '20,000 – 50,000 €',
+            'budget_50_100': '50,000 – 100,000 €',
+            'budget_gt100': 'Over 100,000 €',
+        },
+        'es': {
+            'subject': 'Nueva solicitud de presupuesto — FTFL CARAÏBES',
+            'autoresponse': 'Gracias por su solicitud. El equipo de FTFL CARAÏBES se pondrá en contacto con usted en las próximas 24 horas.',
+            'ph_email': 'su@email.com',
+            'ph_msg': 'Cuéntenos su proyecto: tipo de obras, superficie aproximada, plazos deseados, requisitos especiales…',
+            'budget_lt5': 'Menos de 5.000 €',
+            'budget_5_20': '5.000 – 20.000 €',
+            'budget_20_50': '20.000 – 50.000 €',
+            'budget_50_100': '50.000 – 100.000 €',
+            'budget_gt100': 'Más de 100.000 €',
+        },
+        'nl': {
+            'subject': 'Nieuwe offerteaanvraag — FTFL CARAÏBES',
+            'autoresponse': 'Bedankt voor uw aanvraag. Het team van FTFL CARAÏBES neemt binnen 24 uur contact met u op.',
+            'ph_email': 'uw@email.com',
+            'ph_msg': 'Vertel ons over uw project: type werken, geschatte oppervlakte, gewenste planning, bijzondere vereisten…',
+            'budget_lt5': 'Minder dan 5.000 €',
+            'budget_5_20': '5.000 – 20.000 €',
+            'budget_20_50': '20.000 – 50.000 €',
+            'budget_50_100': '50.000 – 100.000 €',
+            'budget_gt100': 'Meer dan 100.000 €',
+        },
+        'pt': {
+            'subject': 'Novo pedido de orçamento — FTFL CARAÏBES',
+            'autoresponse': 'Obrigado pelo seu pedido. A equipa FTFL CARAÏBES entrará em contacto consigo nas próximas 24 horas.',
+            'ph_email': 'o.seu@email.com',
+            'ph_msg': 'Descreva o seu projeto: tipo de obras, área aproximada, prazos pretendidos, requisitos especiais…',
+            'budget_lt5': 'Menos de 5 000 €',
+            'budget_5_20': '5 000 – 20 000 €',
+            'budget_20_50': '20 000 – 50 000 €',
+            'budget_50_100': '50 000 – 100 000 €',
+            'budget_gt100': 'Mais de 100 000 €',
+        },
+    }
+    ct = CT[lang]
     return f"""<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -925,17 +1217,17 @@ def content_contact(lc):
         <div class="contact-form">
           <h2 class="form-title" data-i18n="form.title">Demande de devis gratuit</h2>
           <form id="contactForm" onsubmit="handleSubmit(event)">
-            <input type="hidden" name="_subject" value="Nouvelle demande de devis — FTFL CARAÏBES"/>
+            <input type="hidden" name="_subject" value="{ct['subject']}"/>
             <input type="hidden" name="_template" value="box"/>
             <input type="hidden" name="_color" value="1a6b35"/>
             <input type="hidden" name="_captcha" value="false"/>
-            <input type="hidden" name="_autoresponse" value="Merci pour votre demande. L'équipe FTFL CARAÏBES vous contactera dans les 24h."/>
+            <input type="hidden" name="_autoresponse" value="{ct['autoresponse']}"/>
             <input type="hidden" name="Heure (Saint-Martin)" id="sxmTime" value=""/>
             <div class="form-row">
               <div class="form-group"><label data-i18n="f.name">Prénom & Nom *</label><input type="text" name="Nom complet" placeholder="Jean Dupont" required/></div>
               <div class="form-group"><label data-i18n="f.phone">Téléphone *</label><input type="tel" name="Telephone" placeholder="+590 690 43 28 18" required/></div>
             </div>
-            <div class="form-group"><label>Email *</label><input type="email" name="Email" placeholder="votre@email.com" required/></div>
+            <div class="form-group"><label>Email *</label><input type="email" name="Email" placeholder="{ct['ph_email']}" required/></div>
             <div class="form-group">
               <label data-i18n="f.svc">Type de prestation *</label>
               <select name="Service demande" id="selectService" required>
@@ -962,15 +1254,15 @@ def content_contact(lc):
                 <label data-i18n="f.budget">Budget estimé</label>
                 <select name="Budget" id="selectBudget">
                   <option value="" disabled selected data-i18n="f.budget.ph">Budget indicatif</option>
-                  <option value="Moins de 5000">Moins de 5 000 €</option>
-                  <option value="5000-20000">5 000 – 20 000 €</option>
-                  <option value="20000-50000">20 000 – 50 000 €</option>
-                  <option value="50000-100000">50 000 – 100 000 €</option>
-                  <option value="Plus de 100000">Plus de 100 000 €</option>
+                  <option value="Moins de 5000">{ct['budget_lt5']}</option>
+                  <option value="5000-20000">{ct['budget_5_20']}</option>
+                  <option value="20000-50000">{ct['budget_20_50']}</option>
+                  <option value="50000-100000">{ct['budget_50_100']}</option>
+                  <option value="Plus de 100000">{ct['budget_gt100']}</option>
                 </select>
               </div>
             </div>
-            <div class="form-group"><label data-i18n="f.msg">Description de votre projet *</label><textarea name="Description" id="msgTextarea" placeholder="Décrivez votre projet : nature des travaux, superficie, délais, contraintes…" required></textarea></div>
+            <div class="form-group"><label data-i18n="f.msg">Description de votre projet *</label><textarea name="Description" id="msgTextarea" placeholder="{ct['ph_msg']}" required></textarea></div>
             <button type="submit" class="form-submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               <span data-i18n="f.submit">Envoyer ma demande</span>
