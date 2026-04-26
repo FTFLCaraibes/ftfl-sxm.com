@@ -7,8 +7,8 @@
   <!-- ═══════════════════════════════════════════════════
        SEO CORE — mis à jour dynamiquement par JS i18n
   ════════════════════════════════════════════════════ -->
-  <title id="seo-title">FTFL CARAÏBES | Construction Company Saint Martin Island | Earthworks Civil Works SXM</title>
-  <meta id="seo-desc"    name="description"    content="FTFL CARAÏBES, your trusted construction company on Saint Martin island (SXM). Earthworks, civil works, exterior works, finishing works and maintenance services on both the French and Dutch sides. Free quote."/>
+  <title id="seo-title">FTFL CARAÏBES – Construction Company Saint Martin / SXM</title>
+  <meta id="seo-desc"    name="description"    content="Construction company on Saint Martin / Sint Maarten. Earthworks, civil works, landscaping, finishing. Free quote."/>
   <meta name="robots"    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="author"    content="FTFL CARAÏBES"/>
   <meta name="copyright" content="FTFL CARAÏBES 2025"/>
@@ -34,15 +34,13 @@
   <meta property="og:locale:alternate" content="es_ES"/>
   <meta property="og:locale:alternate" content="nl_NL"/>
   <meta property="og:locale:alternate" content="pt_PT"/>
-    <meta property="og:locale:alternate" content="es_ES"/>
-  <meta property="og:locale:alternate" content="nl_NL"/>
-  <meta property="og:locale:alternate" content="pt_PT"/>
   <meta property="og:type"             content="website"/>
   <meta property="og:url"              content="https://www.ftfl-sxm.com/en/"/>
-  <meta property="og:image"            content="https://www.ftfl-sxm.com/images/Logo%20FTFL.png"/>
-  <meta property="og:image:alt"        content="FTFL CARAÏBES – Logo"/>
+  <meta property="og:image"            content="https://www.ftfl-sxm.com/images/og-image.jpg"/>
+  <meta property="og:image:alt"        content="FTFL CARAÏBES – Construction Saint-Martin / Sint Maarten"/>
   <meta property="og:image:width"      content="1200"/>
   <meta property="og:image:height"     content="630"/>
+  <meta property="og:image:type"       content="image/jpeg"/>
   <meta property="og:site_name"        content="FTFL CARAÏBES"/>
 
   <!-- ═══════════════════════════════════════════════════
@@ -51,8 +49,8 @@
   <meta name="twitter:card"        content="summary_large_image"/>
   <meta id="tw-title" name="twitter:title"       content="FTFL CARAÏBES | Construction Saint Martin Island"/>
   <meta id="tw-desc"  name="twitter:description"  content="One trusted partner for your construction projects in Saint Martin SXM. Earthworks, finishing works and maintenance services."/>
-  <meta name="twitter:image"       content="https://www.ftfl-sxm.com/images/Logo%20FTFL.png"/>
-  <meta name="twitter:image:alt"   content="FTFL CARAÏBES Logo"/>
+  <meta name="twitter:image"       content="https://www.ftfl-sxm.com/images/og-image.jpg"/>
+  <meta name="twitter:image:alt"   content="FTFL CARAÏBES – Construction Saint-Martin / Sint Maarten"/>
 
   <!-- ═══════════════════════════════════════════════════
        GEO TARGETING — Saint-Martin / Sint Maarten
@@ -68,10 +66,15 @@
   <!-- ═══════════════════════════════════════════════════
        FAVICON & PWA
   ════════════════════════════════════════════════════ -->
-  <link rel="icon"             type="image/png" href="/images/Logo FTFL.png"/>
-  <link rel="apple-touch-icon" href="/images/Logo FTFL.png"/>
-  <meta name="theme-color"     content="#1B6B35"/>
-  <meta name="msapplication-TileColor" content="#1B6B35"/>
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicons/favicon-48x48.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <meta name="theme-color" content="#02602A"/>
+  <meta name="msapplication-TileColor" content="#02602A"/>
 
   <!-- ═══════════════════════════════════════════════════
        PERFORMANCE — preconnect / preload
@@ -495,15 +498,15 @@
       </div>
       <div class="hero-stats">
         <div>
-          <div class="hero-stat-value"><span class="counter" data-target="100">0</span>%</div>
+          <div class="hero-stat-value"><span class="counter" data-target="100">100</span>%</div>
           <div class="hero-stat-label" data-i18n="hero.stat1">Local & rooted in Saint Martin</div>
         </div>
         <div>
-          <div class="hero-stat-value"><span class="counter" data-target="4">0</span> <span data-i18n="hero.stat2unit">trades</span></div>
+          <div class="hero-stat-value"><span class="counter" data-target="4">4</span> <span data-i18n="hero.stat2unit">trades</span></div>
           <div class="hero-stat-label" data-i18n="hero.stat2">Earthworks, Finishing works…</div>
         </div>
         <div>
-          <div class="hero-stat-value"><span class="counter" data-target="2">0</span> <span data-i18n="hero.stat3unit">countries</span></div>
+          <div class="hero-stat-value"><span class="counter" data-target="2">2</span> <span data-i18n="hero.stat3unit">countries</span></div>
           <div class="hero-stat-label" data-i18n="hero.stat3">FR & NL sides covered</div>
         </div>
       </div>
@@ -923,7 +926,7 @@
               </div>
               <div class="form-group">
                 <label data-i18n="f.phone">Phone number *</label>
-                <input type="tel" name="Téléphone" id="phoneNumber" placeholder="Ex : +590 690 43 28 18" required/>
+                <input type="tel" name="Phone" id="phoneNumber" placeholder="Ex : +590 690 43 28 18" required/>
               </div>
             </div>
             <div class="form-group">
@@ -933,7 +936,7 @@
             <div class="form-group">
               <label data-i18n="f.svc">Service required *</label>
               <select name="Service demandé" id="selectService" required>
-                <option value="" disabled selected>Sélectionnez un service</option>
+                <option value="" disabled selected>Select a service</option>
                 <option value="Terrassement & VRD">Terrassement & VRD</option>
                 <option value="Aménagement Extérieur">Aménagement Extérieur</option>
                 <option value="Travaux de Second Œuvre">Travaux de Second Œuvre</option>
@@ -945,7 +948,7 @@
               <div class="form-group">
                 <label data-i18n="f.loc">Site location</label>
                 <select name="Localisation du chantier" id="selectLocation">
-                  <option value="" disabled selected>Partie française ou NL ?</option>
+                  <option value="" disabled selected>French or Dutch side?</option>
                   <option value="Saint-Martin — Partie Française">Saint-Martin (FR)</option>
                   <option value="Sint Maarten — Partie Néerlandaise">Sint Maarten (NL)</option>
                   <option value="Les deux côtés">Les deux</option>
@@ -955,7 +958,7 @@
               <div class="form-group">
                 <label data-i18n="f.budget">Estimated budget</label>
                 <select name="Budget estimé" id="selectBudget">
-                  <option value="" disabled selected>Budget indicatif</option>
+                  <option value="" disabled selected>Indicative budget</option>
                   <option value="Moins de 5 000 €">Moins de 5 000 €</option>
                   <option value="5 000 – 20 000 €">5 000 – 20 000 €</option>
                   <option value="20 000 – 50 000 €">20 000 – 50 000 €</option>
@@ -1033,9 +1036,9 @@
 </footer>
 
 <!-- ======================================================
-     MODAL — MENTIONS LÉGALES
+     MODAL — MENTIONS LÉGALES (supprimé — liens directs utilisés)
 ====================================================== -->
-<div class="legal-modal" id="modalMentions" role="dialog" aria-modal="true" aria-label="Mentions légales">
+<div class="legal-modal" id="modalMentions" role="dialog" aria-modal="true" aria-label="Mentions légales" style="display:none">
   <div class="legal-modal-overlay" onclick="closeLegalModal('modalMentions')"></div>
   <div class="legal-modal-box">
     <button class="legal-close" onclick="closeLegalModal('modalMentions')" aria-label="Fermer">✕</button>
@@ -1155,7 +1158,7 @@
 <!-- ======================================================
      MODAL — POLITIQUE DE CONFIDENTIALITÉ
 ====================================================== -->
-<div class="legal-modal" id="modalPrivacy" role="dialog" aria-modal="true" aria-label="Politique de confidentialité">
+<div class="legal-modal" id="modalPrivacy" role="dialog" aria-modal="true" aria-label="Politique de confidentialité" style="display:none">
   <div class="legal-modal-overlay" onclick="closeLegalModal('modalPrivacy')"></div>
   <div class="legal-modal-box">
     <button class="legal-close" onclick="closeLegalModal('modalPrivacy')" aria-label="Fermer">✕</button>

@@ -141,5 +141,18 @@
   "f.loc.nl": "Sint Maarten (NL)",
   "f.loc.both": "Ambos os lados",
   "f.loc.other": "Outra ilha",
-  "f.budget.ph": "Orçamento indicativo"
+  "f.budget.ph": "Orçamento indicativo",
+  "form.service.placeholder": "Selecione um serviço",
+  "form.service.option_other": "Outro / Vários serviços",
+  "form.location.placeholder": "Lado francês ou holandês?",
+  "form.location.fr": "Lado francês",
+  "form.location.nl": "Lado holandês (Sint Maarten)",
+  "form.location.both": "Ambos os lados",
+  "form.budget.placeholder": "Orçamento indicativo",
+  "form.budget.lt5k": "Menos de 5 000 €",
+  "form.budget.5to15k": "5 000 € a 15 000 €",
+  "form.budget.15to50k": "15 000 € a 50 000 €",
+  "form.budget.gt50k": "Mais de 50 000 €",
+  "form.phone.label": "Telefone",
+  "form.phone.placeholder": "Ex.: +590 690 43 28 18"
 }

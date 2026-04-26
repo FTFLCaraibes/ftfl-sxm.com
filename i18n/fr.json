@@ -141,5 +141,18 @@
   "f.loc.nl": "Sint Maarten (NL)",
   "f.loc.both": "Les deux",
   "f.loc.other": "Autre île",
-  "f.budget.ph": "Budget indicatif"
+  "f.budget.ph": "Budget indicatif",
+  "form.service.placeholder": "Sélectionnez un service",
+  "form.service.option_other": "Autre / Plusieurs services",
+  "form.location.placeholder": "Partie française ou NL ?",
+  "form.location.fr": "Partie française",
+  "form.location.nl": "Partie hollandaise (Sint Maarten)",
+  "form.location.both": "Les deux",
+  "form.budget.placeholder": "Budget indicatif",
+  "form.budget.lt5k": "Moins de 5 000 €",
+  "form.budget.5to15k": "5 000 € à 15 000 €",
+  "form.budget.15to50k": "15 000 € à 50 000 €",
+  "form.budget.gt50k": "Plus de 50 000 €",
+  "form.phone.label": "Téléphone",
+  "form.phone.placeholder": "Ex : +590 690 43 28 18"
 }

@@ -29,8 +29,8 @@ LANGS = {
     'en': {
         'lang':      'en',
         'og_locale': 'en_US',
-        'title':     'FTFL CARAÏBES | Construction Company Saint Martin Island | Earthworks Civil Works SXM',
-        'desc':      'FTFL CARAÏBES, your trusted construction company on Saint Martin island (SXM). Earthworks, civil works, exterior works, finishing works and maintenance services on both the French and Dutch sides. Free quote.',
+        'title':     'FTFL CARAÏBES – Construction Company Saint Martin / SXM',
+        'desc':      'Construction company on Saint Martin / Sint Maarten. Earthworks, civil works, landscaping, finishing. Free quote.',
         'canonical': 'https://www.ftfl-sxm.com/en/',
         'og_url':    'https://www.ftfl-sxm.com/en/',
         'og_title':  'FTFL CARAÏBES | Construction Company Saint Martin',
@@ -65,8 +65,8 @@ LANGS = {
     'es': {
         'lang':      'es',
         'og_locale': 'es_ES',
-        'title':     'FTFL CARAÏBES | Empresa de Construcción Saint-Martin | Movimiento de Tierras y Obras SXM',
-        'desc':      'FTFL CARAÏBES, su empresa de construcción de referencia en Saint-Martin (SXM). Movimiento de tierras, urbanización y redes, obras exteriores, acabados y multiservicios. Lado francés y holandés. Presupuesto gratuito.',
+        'title':     'FTFL CARAÏBES – Empresa de Construcción Saint-Martin',
+        'desc':      'Empresa de construcción en Saint-Martin / SXM. Movimiento de tierras, urbanización, exteriores, acabados. Presupuesto gratis.',
         'canonical': 'https://www.ftfl-sxm.com/es/',
         'og_url':    'https://www.ftfl-sxm.com/es/',
         'og_title':  'FTFL CARAÏBES | Empresa de Construcción Saint-Martin',
@@ -101,8 +101,8 @@ LANGS = {
     'nl': {
         'lang':      'nl',
         'og_locale': 'nl_NL',
-        'title':     'FTFL CARAÏBES | Bouwbedrijf Sint Maarten Saint-Martin | Grondwerken en Infrastructuur SXM',
-        'desc':      'FTFL CARAÏBES, uw betrouwbare bouwpartner op Sint Maarten / Saint-Martin (SXM). Grondwerken, infrastructuurwerken, buitenaanleg, afbouwwerken en multidiensten aan de Franse en Nederlandse kant. Gratis offerte.',
+        'title':     'FTFL CARAÏBES – Bouwbedrijf Sint Maarten / Saint-Martin',
+        'desc':      'Bouwbedrijf op Sint Maarten / Saint-Martin. Grondwerken, infrastructuur, buitenaanleg, afbouw. Gratis offerte.',
         'canonical': 'https://www.ftfl-sxm.com/nl/',
         'og_url':    'https://www.ftfl-sxm.com/nl/',
         'og_title':  'FTFL CARAÏBES | Bouwbedrijf Sint Maarten / Saint-Martin',
@@ -137,8 +137,8 @@ LANGS = {
     'pt': {
         'lang':      'pt',
         'og_locale': 'pt_PT',
-        'title':     'FTFL CARAÏBES | Empresa de Construção Saint-Martin | Terraplenagem Obras SXM',
-        'desc':      'FTFL CARAÏBES, a sua empresa de construção de referência em Saint-Martin (SXM). Terraplenagem, infraestruturas e redes, obras exteriores, acabamentos e multisserviços nos lados francês e holandês. Orçamento gratuito.',
+        'title':     'FTFL CARAÏBES – Construção Saint-Martin / Sint Maarten',
+        'desc':      'Empresa de construção em Saint-Martin / SXM. Terraplenagem, infraestruturas, exteriores, acabamentos. Orçamento gratuito.',
         'canonical': 'https://www.ftfl-sxm.com/pt/',
         'og_url':    'https://www.ftfl-sxm.com/pt/',
         'og_title':  'FTFL CARAÏBES | Empresa de Construção Saint-Martin',
@@ -171,6 +171,35 @@ LANGS = {
         },
     },
 }
+
+def load_translations():
+    translations = {}
+    for lang in ['fr', 'en', 'es', 'nl', 'pt']:
+        path = os.path.join(BASE_DIR, 'i18n', f'{lang}.json')
+        with open(path, 'r', encoding='utf-8') as f:
+            translations[lang] = json.load(f)
+    return translations
+
+TRANSLATIONS = load_translations()
+
+
+def translate_form_and_modals(html: str, lang: str) -> str:
+    t = TRANSLATIONS[lang]
+    html = html.replace(
+        '<option value="" disabled selected>Sélectionnez un service</option>',
+        f'<option value="" disabled selected>{t.get("form.service.placeholder", "Sélectionnez un service")}</option>'
+    )
+    html = html.replace(
+        '<option value="" disabled selected>Partie française ou NL ?</option>',
+        f'<option value="" disabled selected>{t.get("form.location.placeholder", "Partie française ou NL ?")}</option>'
+    )
+    html = html.replace(
+        '<option value="" disabled selected>Budget indicatif</option>',
+        f'<option value="" disabled selected>{t.get("form.budget.placeholder", "Budget indicatif")}</option>'
+    )
+    html = html.replace('name="Téléphone"', f'name="{t.get("form.phone.label", "Phone")}"')
+    return html
+
 
 def translate_jsonld(html: str, lang: str, jsonld_meta: dict) -> str:
     """Translate JSON-LD block text fields and update @id prefixes for target language."""
@@ -325,15 +354,23 @@ def generate(source: str, meta: dict) -> str:
         1
     )
 
-    # 6. og:locale:alternate → supprimer la locale courante, ajouter fr_FR
+    # 6. og:locale:alternate → supprimer TOUTES les anciennes, injecter les bonnes
+    # Étape 1 : supprimer toutes les balises og:locale:alternate existantes
+    out = re.sub(
+        r'\s*<meta\s+property="og:locale:alternate"\s+content="[^"]*"\s*/>',
+        '',
+        out
+    )
+    # Étape 2 : reconstituer les 4 balises propres
     alternate_locales = [l for l in ALL_LOCALES if l != meta['og_locale']]
     new_alternates = '\n  '.join(
         f'<meta property="og:locale:alternate" content="{loc}"/>'
         for loc in alternate_locales
     )
+    # Étape 3 : les insérer juste après og:locale
     out = re.sub(
-        r'(<meta property="og:locale:alternate"[^\n]*/>\n?)+',
-        new_alternates + '\n  ',
+        r'(<meta id="og-locale"[^>]*?content="[^"]*"\s*/>)',
+        rf'\g<1>\n  {new_alternates}',
         out, count=1
     )
 
@@ -392,6 +429,9 @@ def generate(source: str, meta: dict) -> str:
 
     # 15. Pre-render data-i18n elements with translated text (for Googlebot)
     out = apply_i18n(out, lang)
+
+    # 16. Translate form placeholders and phone field name attribute
+    out = translate_form_and_modals(out, lang)
 
     return out
 

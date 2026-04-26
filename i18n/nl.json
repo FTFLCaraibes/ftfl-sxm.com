@@ -141,5 +141,18 @@
   "f.loc.nl": "Sint Maarten (NL)",
   "f.loc.both": "Beide kanten",
   "f.loc.other": "Ander eiland",
-  "f.budget.ph": "Indicatief budget"
+  "f.budget.ph": "Indicatief budget",
+  "form.service.placeholder": "Kies een dienst",
+  "form.service.option_other": "Andere / Meerdere diensten",
+  "form.location.placeholder": "Franse of Nederlandse kant?",
+  "form.location.fr": "Franse kant",
+  "form.location.nl": "Nederlandse kant (Sint Maarten)",
+  "form.location.both": "Beide kanten",
+  "form.budget.placeholder": "Indicatief budget",
+  "form.budget.lt5k": "Minder dan € 5.000",
+  "form.budget.5to15k": "€ 5.000 tot € 15.000",
+  "form.budget.15to50k": "€ 15.000 tot € 50.000",
+  "form.budget.gt50k": "Meer dan € 50.000",
+  "form.phone.label": "Telefoon",
+  "form.phone.placeholder": "Bijv. +590 690 43 28 18"
 }
