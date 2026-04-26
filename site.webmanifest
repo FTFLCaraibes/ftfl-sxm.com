@@ -1,0 +1,23 @@
+{
+  "name": "FTFL CARAÏBES",
+  "short_name": "FTFL",
+  "description": "FTFL CARAÏBES - Entreprise de construction à Saint-Martin / Sint Maarten",
+  "icons": [
+    {
+      "src": "/images/favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#02602A",
+  "background_color": "#02602A",
+  "display": "standalone",
+  "start_url": "/"
+}
