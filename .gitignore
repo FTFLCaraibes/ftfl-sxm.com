@@ -1,0 +1,24 @@
+# Artefacts de déploiement
+*.zip
+*.tar.gz
+
+# Dossiers d'installation tiers
+claude-seo-install/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Node
+node_modules/
+
+# Éditeurs
+.vscode/
+*.swp
+*.swo

@@ -2,345 +2,404 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ══════════════════════════════════════════
-       PAGES D'ACCUEIL
-  ══════════════════════════════════════════ -->
-
   <url>
     <loc>https://www.ftfl-sxm.com/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       SERVICES
-  ══════════════════════════════════════════ -->
   <url>
     <loc>https://www.ftfl-sxm.com/services/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/servicos/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/servicos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/services/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/services/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/servicos/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/servicos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/services/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/servicios/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/servicos/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/servicos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/services/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/diensten/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/servicos/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/servicos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/services/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/servicos/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/diensten/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/servicos/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/diensten/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/servicos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/services/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       APPROCHE / APPROACH / ENFOQUE / AANPAK / ABORDAGEM
-  ══════════════════════════════════════════ -->
   <url>
     <loc>https://www.ftfl-sxm.com/approche/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/approche/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/approach/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/enfoque/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/aanpak/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/abordagem/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/approche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/approach/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/enfoque/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/aanpak/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/abordagem/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/approche/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/approach/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/approche/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/approach/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/enfoque/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/aanpak/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/abordagem/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/approche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/approach/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/enfoque/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/aanpak/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/abordagem/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/approche/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/enfoque/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/approche/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/approach/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/enfoque/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/aanpak/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/abordagem/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/approche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/approach/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/enfoque/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/aanpak/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/abordagem/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/approche/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/aanpak/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/approche/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/approach/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/enfoque/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/aanpak/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/abordagem/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/approche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/approach/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/enfoque/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/aanpak/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/abordagem/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/approche/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/abordagem/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/approche/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/approach/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/enfoque/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/aanpak/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/abordagem/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/approche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/approach/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/enfoque/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/aanpak/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/abordagem/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/approche/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       VALEURS / VALUES / VALORES / WAARDEN
-  ══════════════════════════════════════════ -->
   <url>
     <loc>https://www.ftfl-sxm.com/valeurs/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/valeurs/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/values/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/valores/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/waarden/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/valores/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/valeurs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/values/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/valores/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/waarden/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/valores/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/valeurs/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/values/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/valeurs/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/values/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/valores/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/waarden/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/valores/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/valeurs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/values/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/valores/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/waarden/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/valores/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/valeurs/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/valores/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/valeurs/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/values/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/valores/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/waarden/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/valores/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/valeurs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/values/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/valores/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/waarden/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/valores/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/valeurs/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/waarden/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/valeurs/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/values/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/valores/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/waarden/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/valores/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/valeurs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/values/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/valores/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/waarden/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/valores/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/valeurs/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/valores/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/valeurs/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/values/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/valores/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/waarden/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/valores/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/valeurs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/values/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/valores/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/waarden/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/valores/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/valeurs/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       ZONE / AREA / ZONA / WERKGEBIED
-  ══════════════════════════════════════════ -->
   <url>
     <loc>https://www.ftfl-sxm.com/zone/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/zone/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/area/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/zona/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/zona/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/zone/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/area/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/zona/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/zona/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/zone/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/area/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/zone/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/area/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/zona/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/zona/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/zone/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/area/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/zona/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/zona/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/zone/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/zona/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/zone/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/area/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/zona/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/zona/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/zone/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/area/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/zona/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/zona/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/zone/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/werkgebied/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/zone/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/area/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/zona/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/zona/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/zone/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/area/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/zona/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/zona/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/zone/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/zona/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/zone/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/area/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/zona/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/zona/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/zone/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/area/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/zona/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/werkgebied/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/zona/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/zone/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       CONTACT / CONTACTO
-  ══════════════════════════════════════════ -->
   <url>
     <loc>https://www.ftfl-sxm.com/contact/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/contacto/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/contacto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/contact/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/en/contact/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/contacto/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/contacto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/contact/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/es/contacto/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/contacto/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/contacto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/contact/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/nl/contact/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/contacto/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/contacto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/contact/"/>
   </url>
   <url>
     <loc>https://www.ftfl-sxm.com/pt/contacto/</loc>
-    <lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.ftfl-sxm.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.ftfl-sxm.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es"        href="https://www.ftfl-sxm.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.ftfl-sxm.com/nl/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.ftfl-sxm.com/pt/contacto/"/>
+    <lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/contacto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/contact/"/>
   </url>
-
-  <!-- ══════════════════════════════════════════
-       PAGES LÉGALES (priorité faible)
-  ══════════════════════════════════════════ -->
-  <url><loc>https://www.ftfl-sxm.com/mentions-legales/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/en/legal-notice/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/es/aviso-legal/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/nl/juridische-info/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/pt/mencoes-legais/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/confidentialite/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/en/privacy-policy/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/es/politica-privacidad/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/nl/privacybeleid/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.ftfl-sxm.com/pt/politica-privacidade/</loc><lastmod>2025-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
+  <url>
+    <loc>https://www.ftfl-sxm.com/mentions-legales/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/juridische-info/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/mencoes-legais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/en/legal-notice/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/juridische-info/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/mencoes-legais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/es/aviso-legal/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/juridische-info/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/mencoes-legais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/nl/juridische-info/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/juridische-info/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/mencoes-legais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/pt/mencoes-legais/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/juridische-info/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/mencoes-legais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/confidentialite/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/privacybeleid/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/politica-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/en/privacy-policy/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/privacybeleid/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/politica-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/es/politica-privacidad/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/privacybeleid/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/politica-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/nl/privacybeleid/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/privacybeleid/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/politica-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://www.ftfl-sxm.com/pt/politica-privacidade/</loc>
+    <lastmod>2026-04-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ftfl-sxm.com/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ftfl-sxm.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ftfl-sxm.com/es/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.ftfl-sxm.com/nl/privacybeleid/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ftfl-sxm.com/pt/politica-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ftfl-sxm.com/confidentialite/"/>
+  </url>
 </urlset>

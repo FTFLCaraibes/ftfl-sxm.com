@@ -3,3 +3,33 @@
 https://ftfl-sxm.com/*  https://www.ftfl-sxm.com/:splat  301
 http://ftfl-sxm.com/*   https://www.ftfl-sxm.com/:splat  301
 http://www.ftfl-sxm.com/* https://www.ftfl-sxm.com/:splat 301
+
+# Pages fantômes (anciens slugs FR) → slugs traduits 301
+/en/approche/          /en/approach/            301
+/en/valeurs/           /en/values/              301
+/en/zone/              /en/area/                301
+/en/mentions-legales/  /en/legal-notice/        301
+/en/confidentialite/   /en/privacy-policy/      301
+
+/es/approche/          /es/enfoque/             301
+/es/valeurs/           /es/valores/             301
+/es/zone/              /es/zona/                301
+/es/mentions-legales/  /es/aviso-legal/         301
+/es/confidentialite/   /es/politica-privacidad/ 301
+/es/contact/           /es/contacto/            301
+/es/services/          /es/servicios/           301
+
+/nl/approche/          /nl/aanpak/              301
+/nl/valeurs/           /nl/waarden/             301
+/nl/zone/              /nl/werkgebied/          301
+/nl/mentions-legales/  /nl/juridische-info/     301
+/nl/confidentialite/   /nl/privacybeleid/       301
+/nl/services/          /nl/diensten/            301
+
+/pt/approche/          /pt/abordagem/           301
+/pt/valeurs/           /pt/valores/             301
+/pt/zone/              /pt/zona/                301
+/pt/mentions-legales/  /pt/mencoes-legais/      301
+/pt/confidentialite/   /pt/politica-privacidade/ 301
+/pt/contact/           /pt/contacto/            301
+/pt/services/          /pt/servicos/            301

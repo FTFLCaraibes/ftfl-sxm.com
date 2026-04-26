@@ -93,7 +93,10 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@type": [
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
         "@id": "https://www.ftfl-sxm.com/es/#business",
         "name": "FTFL CARAÏBES",
         "legalName": "FTFL CARAÏBES",
@@ -105,7 +108,7 @@
           "height": 200
         },
         "image": "https://www.ftfl-sxm.com/images/Logo%20FTFL.png",
-        "description": "FTFL CARAÏBES est une entreprise de construction polyvalente implantée à Saint-Martin, intervenant côté français et hollandais. Spécialisée en terrassement, VRD, aménagement extérieur, second œuvre et multiservices.",
+        "description": "FTFL CARAÏBES es una empresa de construcción versátil establecida en Saint-Martin, que opera en los lados francés y holandés. Especializada en movimiento de tierras, urbanización y redes, obras exteriores, acabados y multiservicios.",
         "telephone": "+590690432818",
         "email": "contact@ftfl-sxm.com",
         "address": {
@@ -119,32 +122,70 @@
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 18.0735,
-          "longitude": -63.0820
+          "longitude": -63.082
         },
         "areaServed": [
           {
             "@type": "Place",
-            "name": "Saint-Martin (partie française)",
-            "geo": { "@type": "GeoCoordinates", "latitude": 18.0735, "longitude": -63.0820 }
+            "name": "Saint-Martin (parte francesa)",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.0735,
+              "longitude": -63.082
+            }
           },
           {
             "@type": "Place",
             "name": "Sint Maarten (Dutch side)",
-            "geo": { "@type": "GeoCoordinates", "latitude": 18.0416, "longitude": -63.0548 }
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.0416,
+              "longitude": -63.0548
+            }
           },
-          { "@type": "Place", "name": "Orient Bay" },
-          { "@type": "Place", "name": "Terres Basses" },
-          { "@type": "Place", "name": "Marigot" },
-          { "@type": "Place", "name": "Grand Case" },
-          { "@type": "Place", "name": "Philipsburg" },
-          { "@type": "Place", "name": "Simpson Bay" },
-          { "@type": "Place", "name": "Saint-Barthélemy" },
-          { "@type": "Place", "name": "Anguilla" }
+          {
+            "@type": "Place",
+            "name": "Orient Bay"
+          },
+          {
+            "@type": "Place",
+            "name": "Terres Basses"
+          },
+          {
+            "@type": "Place",
+            "name": "Marigot"
+          },
+          {
+            "@type": "Place",
+            "name": "Grand Case"
+          },
+          {
+            "@type": "Place",
+            "name": "Philipsburg"
+          },
+          {
+            "@type": "Place",
+            "name": "Simpson Bay"
+          },
+          {
+            "@type": "Place",
+            "name": "Saint-Barthélemy"
+          },
+          {
+            "@type": "Place",
+            "name": "Anguilla"
+          }
         ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
             "opens": "07:30",
             "closes": "18:00"
           },
@@ -157,18 +198,20 @@
         ],
         "priceRange": "€€",
         "currenciesAccepted": "EUR",
-        "paymentAccepted": "Cash, Chèque, Virement bancaire",
+        "paymentAccepted": "Efectivo, Cheque, Transferencia bancaria",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Services de construction FTFL CARAÏBES",
+          "name": "Servicios de Construcción FTFL CARAÏBES",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Terrassement & VRD",
-                "description": "Terrassement général, décaissement, nivellement, fouilles, voiries et réseaux divers, assainissement, drainage, enrochement, murs de soutènement, transport et évacuation de matériaux.",
-                "provider": { "@id": "https://www.ftfl-sxm.com/es/#business" },
+                "name": "Movimiento de Tierras y Urbanización",
+                "description": "Explanación general, desmonte, nivelación, excavaciones, viales y redes, saneamiento, drenaje, muros de contención, transporte de materiales.",
+                "provider": {
+                  "@id": "https://www.ftfl-sxm.com/es/#business"
+                },
                 "areaServed": "Saint-Martin, Sint Maarten"
               }
             },
@@ -176,9 +219,11 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Aménagement Extérieur",
-                "description": "Clôtures, portails, terrasses, pergolas, piscines, bassins, aménagement paysager, allées, parkings, éclairage extérieur, murets, récupération eaux pluviales.",
-                "provider": { "@id": "https://www.ftfl-sxm.com/es/#business" },
+                "name": "Obras Exteriores",
+                "description": "Vallado, portales, terrazas, pérgolas, piscinas, ajardinamiento, accesos, aparcamientos, iluminación exterior, depósitos de agua pluvial.",
+                "provider": {
+                  "@id": "https://www.ftfl-sxm.com/es/#business"
+                },
                 "areaServed": "Saint-Martin, Sint Maarten"
               }
             },
@@ -186,9 +231,11 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Travaux de Second Œuvre",
-                "description": "Menuiserie intérieure et extérieure, plomberie, sanitaire, carrelage, peinture, finitions, serrurerie, métallerie, rénovation d'intérieur.",
-                "provider": { "@id": "https://www.ftfl-sxm.com/es/#business" },
+                "name": "Obras de Acabado",
+                "description": "Carpintería, fontanería, alicatado, pintura, cerrajería, metalistería, renovación de interiores.",
+                "provider": {
+                  "@id": "https://www.ftfl-sxm.com/es/#business"
+                },
                 "areaServed": "Saint-Martin, Sint Maarten"
               }
             },
@@ -196,15 +243,23 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Multiservices & Maintenance",
-                "description": "Entretien courant, maintenance préventive et curative, dépannages tous corps d'état, nettoyage de chantier, petits travaux, contrats de maintenance, interventions d'urgence.",
-                "provider": { "@id": "https://www.ftfl-sxm.com/es/#business" },
+                "name": "Multiservicios y Mantenimiento",
+                "description": "Mantenimiento rutinario, preventivo y correctivo, reparaciones de emergencia, limpieza de obras, pequeñas reparaciones, contratos de mantenimiento.",
+                "provider": {
+                  "@id": "https://www.ftfl-sxm.com/es/#business"
+                },
                 "areaServed": "Saint-Martin, Sint Maarten"
               }
             }
           ]
         },
-        "knowsLanguage": ["fr","en","es","nl","pt"],
+        "knowsLanguage": [
+          "fr",
+          "en",
+          "es",
+          "nl",
+          "pt"
+        ],
         "sameAs": [
           "https://www.linkedin.com/company/ftfl-caraïbes/"
         ]
@@ -219,7 +274,13 @@
           "@type": "ContactPoint",
           "telephone": "+590-690-43-28-18",
           "contactType": "customer service",
-          "availableLanguage": ["French","English","Spanish","Dutch","Portuguese"]
+          "availableLanguage": [
+            "French",
+            "English",
+            "Spanish",
+            "Dutch",
+            "Portuguese"
+          ]
         }
       },
       {
@@ -227,9 +288,17 @@
         "@id": "https://www.ftfl-sxm.com/es/#website",
         "url": "https://www.ftfl-sxm.com",
         "name": "FTFL CARAÏBES",
-        "description": "Site officiel de FTFL CARAÏBES, entreprise de construction à Saint-Martin",
-        "publisher": { "@id": "https://www.ftfl-sxm.com/es/#organization" },
-        "inLanguage": ["fr","en","es","nl","pt"],
+        "description": "Sitio oficial de FTFL CARAÏBES, empresa de construcción en Saint-Martin",
+        "publisher": {
+          "@id": "https://www.ftfl-sxm.com/es/#organization"
+        },
+        "inLanguage": [
+          "fr",
+          "en",
+          "es",
+          "nl",
+          "pt"
+        ],
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
@@ -245,50 +314,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Quels types de travaux réalise FTFL CARAÏBES à Saint-Martin ?",
+            "name": "¿Qué tipos de trabajos realiza FTFL CARAÏBES en Saint-Martin?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "FTFL CARAÏBES réalise tous types de travaux : terrassement et VRD, aménagement extérieur (terrasses, piscines, clôtures), travaux de second œuvre (plomberie, carrelage, peinture, menuiserie) et multiservices / maintenance. Un seul interlocuteur pour tous vos projets."
+              "text": "FTFL CARAÏBES realiza todo tipo de trabajos: movimiento de tierras y urbanización, obras exteriores (terrazas, piscinas, vallado), obras de acabado (fontanería, alicatado, pintura, carpintería) y multiservicios / mantenimiento. Un único interlocutor para todos sus proyectos."
             }
           },
           {
             "@type": "Question",
-            "name": "FTFL intervient-il côté hollandais (Sint Maarten) ?",
+            "name": "¿FTFL interviene en el lado holandés (Sint Maarten)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui, FTFL CARAÏBES opère sur l'ensemble de l'île de Saint-Martin, aussi bien côté français que côté hollandais (Sint Maarten). Notre équipe maîtrise les deux systèmes réglementaires."
+              "text": "Sí, FTFL CARAÏBES opera en toda la isla de Saint-Martin, tanto en el lado francés como en el holandés (Sint Maarten). Nuestro equipo domina ambos sistemas normativos."
             }
           },
           {
             "@type": "Question",
-            "name": "Comment obtenir un devis de FTFL CARAÏBES ?",
+            "name": "¿Cómo obtener un presupuesto de FTFL CARAÏBES?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vous pouvez demander un devis gratuit en remplissant le formulaire de contact sur notre site ftfl-sxm.com, en nous appelant au +590 690 43 28 18 ou en nous écrivant à contact@ftfl-sxm.com. Nous vous répondons rapidement."
+              "text": "Puede solicitar un presupuesto gratuito rellenando el formulario de contacto en ftfl-sxm.com, llamándonos al +590 690 43 28 18 o escribiendo a contact@ftfl-sxm.com. Respondemos con rapidez."
             }
           },
           {
             "@type": "Question",
-            "name": "FTFL CARAÏBES réalise-t-il des travaux de construction de piscines à Saint-Martin ?",
+            "name": "¿FTFL CARAÏBES realiza construcción de piscinas en Saint-Martin?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui, FTFL CARAÏBES réalise la construction de piscines et bassins à Saint-Martin, ainsi que tous les aménagements extérieurs associés : plages de piscine, pergolas, terrasses, éclairage, paysagisme."
+              "text": "Sí, FTFL CARAÏBES construye piscinas y estanques en Saint-Martin, así como todos los trabajos exteriores asociados: solados de piscina, pérgolas, terrazas, iluminación y paisajismo."
             }
           },
           {
             "@type": "Question",
-            "name": "Quelle est la zone d'intervention de FTFL CARAÏBES ?",
+            "name": "¿Cuál es la zona de intervención de FTFL CARAÏBES?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "FTFL CARAÏBES intervient sur toute l'île de Saint-Martin / Sint Maarten : Orient Bay, Terres Basses, Marigot, Grand Case, Oyster Pond, Anse Marcel, Philipsburg, Simpson Bay, Maho, Cole Bay. Des interventions ponctuelles sont possibles à Saint-Barthélemy et Anguilla."
+              "text": "FTFL CARAÏBES opera en toda la isla de Saint-Martin / Sint Maarten: Orient Bay, Terres Basses, Marigot, Grand Case, Oyster Pond, Anse Marcel, Philipsburg, Simpson Bay, Maho, Cole Bay. Intervenciones puntuales en Saint-Barthélemy y Anguilla."
             }
           },
           {
             "@type": "Question",
-            "name": "Does FTFL CARAÏBES work on the Dutch side of Saint Martin?",
+            "name": "¿FTFL CARAÏBES trabaja en el lado holandés de Saint-Martin?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, FTFL CARAÏBES operates on both the French and Dutch sides of Saint Martin / Sint Maarten island. Our team is familiar with both regulatory systems and can manage projects anywhere on the island."
+              "text": "Sí, FTFL CARAÏBES opera en los lados francés y holandés de la isla de Saint-Martin / Sint Maarten. Nuestro equipo domina ambos sistemas normativos y puede gestionar proyectos en cualquier punto de la isla."
             }
           }
         ]
@@ -296,9 +365,24 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.ftfl-sxm.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ftfl-sxm.com/es/#services" },
-          { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://www.ftfl-sxm.com/es/#contact" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.ftfl-sxm.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://www.ftfl-sxm.com/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contacto",
+            "item": "https://www.ftfl-sxm.com/#contact"
+          }
         ]
       }
     ]
@@ -328,12 +412,12 @@
 ====================================================== -->
 <div class="mobile-nav" id="mobileNav">
   <div class="mobile-nav-close" onclick="closeMobileNav()">✕</div>
-  <a href="#about" onclick="closeMobileNav()" data-i18n="nav.about">À propos</a>
-  <a href="#services" onclick="closeMobileNav()" data-i18n="nav.services">Services</a>
-  <a href="#approach" onclick="closeMobileNav()" data-i18n="nav.approach">Approche</a>
-  <a href="#values" onclick="closeMobileNav()" data-i18n="nav.values">Valeurs</a>
-  <a href="#zone" onclick="closeMobileNav()" data-i18n="nav.zone">Zone</a>
-  <a href="#contact" onclick="closeMobileNav()" data-i18n="nav.cta">Contactez-nous</a>
+  <a href="#about" onclick="closeMobileNav()" data-i18n="nav.about">Quiénes somos</a>
+  <a href="#services" onclick="closeMobileNav()" data-i18n="nav.services">Servicios</a>
+  <a href="#approach" onclick="closeMobileNav()" data-i18n="nav.approach">Método</a>
+  <a href="#values" onclick="closeMobileNav()" data-i18n="nav.values">Valores</a>
+  <a href="#zone" onclick="closeMobileNav()" data-i18n="nav.zone">Cobertura</a>
+  <a href="#contact" onclick="closeMobileNav()" data-i18n="nav.cta">Contáctenos</a>
 </div>
 
 <!-- ======================================================
@@ -362,16 +446,16 @@
       </div>
     </div>
     <ul class="nav-links">
-      <li><a href="#about" data-i18n="nav.about">À propos</a></li>
-      <li><a href="#services" data-i18n="nav.services">Services</a></li>
-      <li><a href="#approach" data-i18n="nav.approach">Approche</a></li>
-      <li><a href="#values" data-i18n="nav.values">Valeurs</a></li>
-      <li><a href="#zone" data-i18n="nav.zone">Zone</a></li>
+      <li><a href="#about" data-i18n="nav.about">Quiénes somos</a></li>
+      <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#approach" data-i18n="nav.approach">Método</a></li>
+      <li><a href="#values" data-i18n="nav.values">Valores</a></li>
+      <li><a href="#zone" data-i18n="nav.zone">Cobertura</a></li>
     </ul>
     <div class="navbar-cta">
       <a href="#contact" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.2a16 16 0 0 0 6 6l1.56-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.56z"/></svg>
-        <span data-i18n="nav.cta">Contactez-nous</span>
+        <span data-i18n="nav.cta">Contáctenos</span>
       </a>
     </div>
     <div class="burger" onclick="openMobileNav()">
@@ -395,34 +479,32 @@
     <div class="hero-grid">
     <div class="hero-content">
       <h1 class="hero-title" id="heroTitle">
-        <span class="line" data-i18n="hero.line1">Un seul partenaire</span>
-        <span class="line" data-i18n="hero.line2">pour tous vos <span class="orange-word">travaux.</span></span>
+        <span class="line" data-i18n="hero.line1">Un único socio</span>
+        <span class="line" data-i18n="hero.line2">para todas sus <span class="orange-word">obras.</span></span>
       </h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">
-        FTFL CARAÏBES, votre entreprise de construction polyvalente implantée des deux côtés de l'île. Terrassement, aménagement extérieur, second œuvre et multiservices.
-      </p>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">FTFL CARAÏBES es la empresa de construcción de referencia en Saint-Martin, presente en ambos lados de la isla. Movimiento de tierras, acondicionamiento exterior, acabados y mantenimiento.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.2a16 16 0 0 0 6 6l1.56-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.56z"/></svg>
-          <span data-i18n="hero.cta1">Demander un devis</span>
+          <span data-i18n="hero.cta1">Solicitar presupuesto</span>
         </a>
         <a href="#services" class="btn btn-outline">
-          <span data-i18n="hero.cta2">Découvrir nos métiers</span>
+          <span data-i18n="hero.cta2">Ver nuestros servicios</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
       <div class="hero-stats">
         <div>
           <div class="hero-stat-value"><span class="counter" data-target="100">0</span>%</div>
-          <div class="hero-stat-label" data-i18n="hero.stat1">Local & ancré à Saint-Martin</div>
+          <div class="hero-stat-label" data-i18n="hero.stat1">Empresa local, arraigada en Saint-Martin</div>
         </div>
         <div>
-          <div class="hero-stat-value"><span class="counter" data-target="4">0</span> <span data-i18n="hero.stat2unit">métiers</span></div>
-          <div class="hero-stat-label" data-i18n="hero.stat2">Terrassement, Second œuvre…</div>
+          <div class="hero-stat-value"><span class="counter" data-target="4">0</span> <span data-i18n="hero.stat2unit">oficios</span></div>
+          <div class="hero-stat-label" data-i18n="hero.stat2">Movimiento de tierras, acabados…</div>
         </div>
         <div>
-          <div class="hero-stat-value"><span class="counter" data-target="2">0</span> <span data-i18n="hero.stat3unit">pays</span></div>
-          <div class="hero-stat-label" data-i18n="hero.stat3">Partie FR & NL couverte</div>
+          <div class="hero-stat-value"><span class="counter" data-target="2">0</span> <span data-i18n="hero.stat3unit">países</span></div>
+          <div class="hero-stat-label" data-i18n="hero.stat3">Lados FR y NL cubiertos</div>
         </div>
       </div>
     </div>
@@ -440,7 +522,7 @@
   </div>
 
   <div class="hero-scroll">
-    <span data-i18n="hero.scroll">Défiler</span>
+    <span data-i18n="hero.scroll">Deslizar</span>
     <div class="hero-scroll-line"></div>
   </div>
 </section>
@@ -452,27 +534,27 @@
   <div class="container">
     <div class="grid-2">
       <div class="about-text" data-aos="fade-right">
-        <span class="section-tag" data-i18n="about.tag">À propos</span>
-        <h2 class="section-title" data-i18n="about.title">Née d'une conviction simple,<br/><span class="highlight">enracinée dans les Caraïbes.</span></h2>
-        <p data-i18n="about.p1">FTFL CARAÏBES est née d'une conviction simple : à Saint-Martin, les projets de construction et d'aménagement méritent un <strong>partenaire local fiable, réactif et polyvalent</strong>.</p>
-        <p data-i18n="about.p2">Fondée par des professionnels du BTP enracinés dans le tissu caribéen, notre entreprise intervient des deux côtés de l'île — partie française comme partie hollandaise — avec une parfaite connaissance du terrain, des acteurs locaux et des contraintes propres à notre territoire.</p>
-        <p data-i18n="about.p3">Notre ambition : devenir le <strong>partenaire de référence</strong> des particuliers, des professionnels et des institutionnels pour tous leurs projets travaux à Saint-Martin.</p>
+        <span class="section-tag" data-i18n="about.tag">Quiénes somos</span>
+        <h2 class="section-title" data-i18n="about.title">Nacida de una convicción,<br/><span class="highlight">arraigada en el Caribe.</span></h2>
+        <p data-i18n="about.p1">FTFL CARAÏBES nació de una convicción: en Saint-Martin, los proyectos de construcción merecen un <strong>socio local serio, ágil y polivalente</strong>, no un contratista de paso.</p>
+        <p data-i18n="about.p2">Fundada por profesionales de la construcción con raíces en el Caribe, nuestra empresa opera en ambos lados de la isla — francés y holandés — con un conocimiento profundo del territorio, sus actores y sus particularidades.</p>
+        <p data-i18n="about.p3">Nuestra ambición: ser el <strong>socio de referencia</strong> de particulares, promotores, hoteles y administraciones para todos sus proyectos en Saint-Martin.</p>
         <div class="about-badges">
           <div class="about-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span data-i18n="about.badge1">Réactivité & disponibilité</span>
+            <span data-i18n="about.badge1">Rapidez y disponibilidad</span>
           </div>
           <div class="about-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span data-i18n="about.badge2">Respect des délais & budgets</span>
+            <span data-i18n="about.badge2">Plazos y presupuestos cumplidos</span>
           </div>
           <div class="about-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span data-i18n="about.badge3">Qualité d'exécution</span>
+            <span data-i18n="about.badge3">Calidad de ejecución</span>
           </div>
           <div class="about-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span data-i18n="about.badge4">Transparence client</span>
+            <span data-i18n="about.badge4">Transparencia total</span>
           </div>
         </div>
       </div>
@@ -482,27 +564,15 @@
             <div class="about-card-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <h4 data-i18n="about.clients.h">Nos clients</h4>
-            <div class="clients-list" data-i18n="about.clients.list">
-              <div class="client-item">Particuliers</div>
-              <div class="client-item">Copropriétés</div>
-              <div class="client-item">Promoteurs & Investisseurs</div>
-              <div class="client-item">Hôteliers & Commerces</div>
-              <div class="client-item">Collectivités & Institutionnels</div>
-            </div>
+            <h4 data-i18n="about.clients.h">Nuestros clientes</h4>
+            <div class="clients-list" data-i18n="about.clients.list"><div class="client-item">Particulares</div><div class="client-item">Comunidades de propietarios</div><div class="client-item">Promotores e Inversores</div><div class="client-item">Hoteles y Comercios</div><div class="client-item">Instituciones y Organismos públicos</div></div>
           </div>
           <div class="about-card">
             <div class="about-card-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <h4 data-i18n="about.commit.h">Nos engagements</h4>
-            <div class="clients-list" data-i18n="about.commit.list">
-              <div class="client-item">Un interlocuteur unique</div>
-              <div class="client-item">Chantier suivi au quotidien</div>
-              <div class="client-item">Devis précis & détaillé</div>
-              <div class="client-item">Livraison aux règles de l'art</div>
-              <div class="client-item">Intervention FR & NL</div>
-            </div>
+            <h4 data-i18n="about.commit.h">Nuestros compromisos</h4>
+            <div class="clients-list" data-i18n="about.commit.list"><div class="client-item">Un solo interlocutor</div><div class="client-item">Seguimiento diario de obra</div><div class="client-item">Presupuesto detallado y preciso</div><div class="client-item">Entrega según las normas del arte</div><div class="client-item">Intervenciones FR y NL</div></div>
           </div>
         </div>
       </div>
@@ -516,9 +586,9 @@
 <section class="section services" id="services">
   <div class="container">
     <div class="services-header" data-aos="fade-up">
-      <a href="/es/servicios/" class="section-tag" data-i18n="services.tag">Nos Métiers</a>
-      <h2 class="section-title" data-i18n="services.title">Une réponse complète<br/>à <span class="highlight">chaque besoin.</span></h2>
-      <p class="section-sub" data-i18n="services.sub">Du terrassement aux finitions, FTFL couvre l'ensemble des corps d'état avec les mêmes standards d'exigence.</p>
+      <a href="/es/servicios/" class="section-tag" data-i18n="services.tag">Nuestros Servicios</a>
+      <h2 class="section-title" data-i18n="services.title">Una respuesta global<br/>a <span class="highlight">cada necesidad.</span></h2>
+      <p class="section-sub" data-i18n="services.sub">Desde el movimiento de tierras hasta los acabados, FTFL cubre todos los oficios de la construcción con el mismo nivel de exigencia.</p>
     </div>
     <div class="grid-4">
 
@@ -528,17 +598,9 @@
         <div class="service-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20"/><path d="M6.87 2h10.26L20 7H4L6.87 2Z"/><path d="M4 7h16v15H4V7Z"/><path d="M9 22V12h6v10"/></svg>
         </div>
-        <h3 data-i18n="svc1.h">Terrassement & VRD</h3>
-        <p data-i18n="svc1.p">Nous préparons le terrain pour vos projets avec des moyens adaptés aux spécificités de l'île.</p>
-        <div class="service-tags" data-i18n="svc1.tags">
-          <span class="service-tag">Terrassement général</span>
-          <span class="service-tag">Décaissement</span>
-          <span class="service-tag">Fouilles</span>
-          <span class="service-tag">Voiries</span>
-          <span class="service-tag">Assainissement</span>
-          <span class="service-tag">Enrochement</span>
-          <span class="service-tag">Drainage</span>
-        </div>
+        <h3 data-i18n="svc1.h">Movimiento de tierras, urbanización y redes</h3>
+        <p data-i18n="svc1.p">Preparamos el terreno para sus proyectos con medios adaptados a las especificidades de la isla.</p>
+        <div class="service-tags" data-i18n="svc1.tags"><span class="service-tag">Movimiento de tierras general</span><span class="service-tag">Excavación</span><span class="service-tag">Zanjas</span><span class="service-tag">Viales</span><span class="service-tag">Saneamiento</span><span class="service-tag">Escollera</span><span class="service-tag">Drenaje</span></div>
       </div>
 
       <!-- Service 2 -->
@@ -547,17 +609,9 @@
         <div class="service-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <h3 data-i18n="svc2.h">Aménagement Extérieur</h3>
-        <p data-i18n="svc2.p">Nous concevons et réalisons vos espaces extérieurs pour sublimer vos propriétés.</p>
-        <div class="service-tags" data-i18n="svc2.tags">
-          <span class="service-tag">Clôtures & portails</span>
-          <span class="service-tag">Terrasses</span>
-          <span class="service-tag">Pergolas</span>
-          <span class="service-tag">Piscines</span>
-          <span class="service-tag">Paysager</span>
-          <span class="service-tag">Éclairage ext.</span>
-          <span class="service-tag">Citernes</span>
-        </div>
+        <h3 data-i18n="svc2.h">Obras exteriores</h3>
+        <p data-i18n="svc2.p">Diseñamos y ejecutamos sus espacios exteriores para realzar el valor y el atractivo de sus propiedades.</p>
+        <div class="service-tags" data-i18n="svc2.tags"><span class="service-tag">Vallas y portones</span><span class="service-tag">Terrazas</span><span class="service-tag">Pérgolas</span><span class="service-tag">Piscinas</span><span class="service-tag">Jardinería</span><span class="service-tag">Iluminación ext.</span><span class="service-tag">Cisternas</span></div>
       </div>
 
       <!-- Service 3 -->
@@ -566,17 +620,9 @@
         <div class="service-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <h3 data-i18n="svc3.h">Travaux de Second Œuvre</h3>
-        <p data-i18n="svc3.p">FTFL prend en charge l'ensemble des travaux de second œuvre pour vos projets.</p>
-        <div class="service-tags" data-i18n="svc3.tags">
-          <span class="service-tag">Menuiserie</span>
-          <span class="service-tag">Plomberie</span>
-          <span class="service-tag">Carrelage</span>
-          <span class="service-tag">Peinture</span>
-          <span class="service-tag">Serrurerie</span>
-          <span class="service-tag">Métallerie</span>
-          <span class="service-tag">Rénovation</span>
-        </div>
+        <h3 data-i18n="svc3.h">Acabados interiores</h3>
+        <p data-i18n="svc3.p">FTFL gestiona todos los trabajos de acabado y rehabilitación para llevar sus proyectos hasta la entrega final.</p>
+        <div class="service-tags" data-i18n="svc3.tags"><span class="service-tag">Carpintería</span><span class="service-tag">Fontanería</span><span class="service-tag">Alicatado</span><span class="service-tag">Pintura</span><span class="service-tag">Cerrajería</span><span class="service-tag">Metalistería</span><span class="service-tag">Reformas</span></div>
       </div>
 
       <!-- Service 4 -->
@@ -585,16 +631,9 @@
         <div class="service-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
         </div>
-        <h3 data-i18n="svc4.h">Multiservices</h3>
-        <p data-i18n="svc4.p">Un interlocuteur unique pour l'entretien, la maintenance et les petits travaux de vos biens.</p>
-        <div class="service-tags" data-i18n="svc4.tags">
-          <span class="service-tag">Maintenance préventive</span>
-          <span class="service-tag">Dépannage</span>
-          <span class="service-tag">Nettoyage chantier</span>
-          <span class="service-tag">Petits travaux</span>
-          <span class="service-tag">Contrats maintenance</span>
-          <span class="service-tag">Urgences</span>
-        </div>
+        <h3 data-i18n="svc4.h">Multiservicios y Mantenimiento</h3>
+        <p data-i18n="svc4.p">Un único interlocutor para el mantenimiento ordinario, el mantenimiento preventivo y las intervenciones de urgencia en su inmueble.</p>
+        <div class="service-tags" data-i18n="svc4.tags"><span class="service-tag">Mantenimiento preventivo</span><span class="service-tag">Averías</span><span class="service-tag">Limpieza de obra</span><span class="service-tag">Pequeñas obras</span><span class="service-tag">Contratos mantenimiento</span><span class="service-tag">Urgencias 24h</span></div>
       </div>
 
     </div>
@@ -611,10 +650,10 @@
        width="1440" height="400"/>
   <div class="showcase-strip-overlay">
     <div class="showcase-text">
-      <h3 data-i18n="showcase.h">L'excellence au service de <span class="highlight">chaque chantier.</span></h3>
-      <p data-i18n="showcase.p">Équipements professionnels, équipes qualifiées, maîtrise totale du territoire : chaque projet FTFL est conduit avec le même niveau d'exigence.</p>
+      <h3 data-i18n="showcase.h">La excelencia al servicio de <span class="highlight">cada obra.</span></h3>
+      <p data-i18n="showcase.p">Maquinaria profesional, equipos expertos y profundo conocimiento del territorio: cada proyecto FTFL se lleva a cabo con el mismo nivel de exigencia.</p>
       <a href="#contact" class="btn btn-primary">
-        <span data-i18n="showcase.cta">Demander un devis</span>
+        <span data-i18n="showcase.cta">Solicitar presupuesto</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -627,38 +666,38 @@
 <section class="section approach" id="approach">
   <div class="container">
     <div class="approach-header" data-aos="fade-up">
-      <a href="/es/enfoque/" class="section-tag" data-i18n="approach.tag">Notre Approche</a>
-      <h2 class="section-title" data-i18n="approach.title">Un processus <span class="highlight">rigoureux</span><br/>à chaque étape.</h2>
-      <p class="section-sub" data-i18n="approach.sub">De la première rencontre à la livraison, nous vous accompagnons avec méthode et transparence.</p>
+      <a href="/es/enfoque/" class="section-tag" data-i18n="approach.tag">Nuestro Método</a>
+      <h2 class="section-title" data-i18n="approach.title">Un proceso <span class="highlight">riguroso</span><br/>en cada etapa.</h2>
+      <p class="section-sub" data-i18n="approach.sub">Desde el primer encuentro hasta la entrega de llaves, le acompañamos con método, rigor y transparencia absoluta.</p>
     </div>
     <div class="approach-steps">
       <div class="approach-step" data-aos="fade-up" data-aos-delay="0">
         <div class="step-circle">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
         </div>
-        <h3 class="step-title" data-i18n="step1.h">01 · Écoute</h3>
-        <p class="step-desc" data-i18n="step1.p">Nous prenons le temps de comprendre votre projet, vos contraintes et vos attentes pour définir ensemble la meilleure stratégie.</p>
+        <h3 class="step-title" data-i18n="step1.h">01 · Escucha</h3>
+        <p class="step-desc" data-i18n="step1.p">Nos tomamos el tiempo de entender su proyecto en profundidad — necesidades técnicas, presupuesto, plazos — para definir juntos la mejor estrategia desde el principio.</p>
       </div>
       <div class="approach-step" data-aos="fade-up" data-aos-delay="100">
         <div class="step-circle">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
-        <h3 class="step-title" data-i18n="step2.h">02 · Étude</h3>
-        <p class="step-desc" data-i18n="step2.p">Nous réalisons une étude technique et financière détaillée : chiffrage précis, planning prévisionnel et identification des risques.</p>
+        <h3 class="step-title" data-i18n="step2.h">02 · Estudio</h3>
+        <p class="step-desc" data-i18n="step2.p">Presupuesto detallado, calendario preliminar, análisis de riesgos: nuestro estudio técnico-económico le da visibilidad total antes de cualquier inicio de obra.</p>
       </div>
       <div class="approach-step" data-aos="fade-up" data-aos-delay="200">
         <div class="step-circle">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <h3 class="step-title" data-i18n="step3.h">03 · Exécution</h3>
-        <p class="step-desc" data-i18n="step3.p">Nos équipes interviennent avec rigueur et professionnalisme. Un chef de chantier dédié assure le suivi quotidien.</p>
+        <h3 class="step-title" data-i18n="step3.h">03 · Ejecución</h3>
+        <p class="step-desc" data-i18n="step3.p">Nuestros equipos actúan con precisión y profesionalidad. Un jefe de obra dedicado coordina cada intervención y le mantiene informado en tiempo real.</p>
       </div>
       <div class="approach-step" data-aos="fade-up" data-aos-delay="300">
         <div class="step-circle">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
         </div>
-        <h3 class="step-title" data-i18n="step4.h">04 · Livraison</h3>
-        <p class="step-desc" data-i18n="step4.p">Nous ne quittons le chantier qu'une fois la totalité des travaux achevés à votre entière satisfaction, dans les règles de l'art.</p>
+        <h3 class="step-title" data-i18n="step4.h">04 · Entrega</h3>
+        <p class="step-desc" data-i18n="step4.p">No entregamos las llaves hasta que cada detalle esté terminado a su entera satisfacción, respetando tanto las normas de la construcción como los plazos acordados.</p>
       </div>
     </div>
   </div>
@@ -670,38 +709,38 @@
 <section class="section values" id="values">
   <div class="container">
     <div class="values-header" data-aos="fade-right">
-      <a href="/es/valores/" class="section-tag" data-i18n="values.tag">Nos Valeurs</a>
-      <h2 class="section-title" data-i18n="values.title">Ce qui nous <span class="highlight">distingue.</span></h2>
-      <p class="section-sub" data-i18n="values.sub">Quatre piliers qui guident chacune de nos interventions, du premier devis à la livraison.</p>
+      <a href="/es/valores/" class="section-tag" data-i18n="values.tag">Nuestros Valores</a>
+      <h2 class="section-title" data-i18n="values.title">Lo que nos <span class="highlight">define.</span></h2>
+      <p class="section-sub" data-i18n="values.sub">Cuatro principios fundacionales que guían cada una de nuestras decisiones, del primer presupuesto a la entrega final.</p>
     </div>
     <div class="grid-4">
       <div class="value-card" data-aos="fade-up" data-aos-delay="0">
         <div class="value-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <h3 data-i18n="val1.h">Ancrage Local</h3>
-        <p data-i18n="val1.p">Implantés à Saint-Martin, nous connaissons chaque quartier, chaque fournisseur, chaque contrainte du territoire. Cette proximité nous permet d'être réactifs.</p>
+        <h3 data-i18n="val1.h">Arraigo Local</h3>
+        <p data-i18n="val1.p">Presentes en Saint-Martin desde el primer día, conocemos cada barrio, cada proveedor y cada condicionante local. Esa proximidad nos hace más ágiles y eficaces allí donde otros aún están buscando referencias.</p>
       </div>
       <div class="value-card" data-aos="fade-up" data-aos-delay="80">
         <div class="value-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3 data-i18n="val2.h">Fiabilité</h3>
-        <p data-i18n="val2.p">Un chantier qui démarre à l'heure, un budget respecté, des engagements tenus. Chez FTFL, la parole donnée a de la valeur. Nous construisons notre réputation projet après projet.</p>
+        <h3 data-i18n="val2.h">Fiabilidad</h3>
+        <p data-i18n="val2.p">Obras que comienzan a tiempo. Presupuestos que se respetan. Compromisos que se cumplen sin excepción. En FTFL, nuestra reputación se construye obra a obra, sobre hechos.</p>
       </div>
       <div class="value-card" data-aos="fade-up" data-aos-delay="160">
         <div class="value-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
-        <h3 data-i18n="val3.h">Polyvalence</h3>
-        <p data-i18n="val3.p">Du terrassement aux finitions, de la villa au local commercial, nous avons les compétences et les équipements pour répondre à tous les besoins. Un seul interlocuteur.</p>
+        <h3 data-i18n="val3.h">Polivalencia</h3>
+        <p data-i18n="val3.p">Del movimiento de tierras a los acabados, de la villa privada al local comercial, cubrimos todos los gremios de obra. Un solo interlocutor, cero coordinación adicional que gestionar.</p>
       </div>
       <div class="value-card" data-aos="fade-up" data-aos-delay="240">
         <div class="value-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <h3 data-i18n="val4.h">Exigence</h3>
-        <p data-i18n="val4.p">Chaque détail compte. Nous appliquons les mêmes standards de qualité sur tous nos chantiers, petits ou grands, en nous adaptant aux normes du territoire.</p>
+        <h3 data-i18n="val4.h">Exigencia</h3>
+        <p data-i18n="val4.p">Aplicamos los mismos estándares de calidad en cada obra, sea cual sea su envergadura. Normativa local, seguridad, plazos: nada se deja al azar en un proyecto FTFL.</p>
       </div>
     </div>
   </div>
@@ -720,16 +759,16 @@
   </div>
   <div class="container">
     <div class="zone-content" data-aos="fade-up">
-      <a href="/es/zona/" class="section-tag" data-i18n="zone.tag">Zone d'Intervention</a>
-      <h2 class="section-title" data-i18n="zone.title">Une île, deux pays,<br/><span class="highlight">une seule équipe.</span></h2>
-      <p class="section-sub" data-i18n="zone.sub">FTFL opère sur l'ensemble de l'île de Saint-Martin, côté français comme côté hollandais. Cette double implantation est un atout majeur pour nos clients.</p>
+      <a href="/es/zona/" class="section-tag" data-i18n="zone.tag">Zona de Intervención</a>
+      <h2 class="section-title" data-i18n="zone.title">Una isla, dos países,<br/><span class="highlight">un solo equipo.</span></h2>
+      <p class="section-sub" data-i18n="zone.sub">FTFL opera en toda la isla de Saint-Martin, tanto en el lado francés como en el holandés. Doble dominio normativo y logístico al servicio de sus proyectos.</p>
     </div>
     <div class="zone-visual">
       <div class="zone-card zone-card-fr" data-aos="fade-right">
         <div class="zone-flag">🇫🇷</div>
         <h3>Saint-Martin</h3>
-        <p style="color:rgba(0,85,164,.8);font-weight:600;" data-i18n="zone.fr.side">Partie Française</p>
-        <p data-i18n="zone.fr.desc">Connaissance approfondie du système administratif et réglementaire français.</p>
+        <p style="color:rgba(0,85,164,.8);font-weight:600;" data-i18n="zone.fr.side">Lado Francés</p>
+        <p data-i18n="zone.fr.desc">Dominio completo del marco administrativo y normativo francés. Permisos de obra, declaraciones, normativas técnicas: lo gestionamos todo.</p>
         <div class="zone-places">
           <span class="zone-place">Orient Bay</span>
           <span class="zone-place">Mont Vernon</span>
@@ -745,8 +784,8 @@
       <div class="zone-card zone-card-nl" data-aos="fade-left">
         <div class="zone-flag">🇸🇽</div>
         <h3>Sint Maarten</h3>
-        <p style="color:rgba(174,28,40,.8);font-weight:600;" data-i18n="zone.nl.side">Dutch Side</p>
-        <p data-i18n="zone.nl.desc">Maîtrise du système réglementaire néerlandais pour tous vos projets.</p>
+        <p style="color:rgba(174,28,40,.8);font-weight:600;" data-i18n="zone.nl.side">Lado Holandés</p>
+        <p data-i18n="zone.nl.desc">Conocimiento profundo del sistema normativo neerlandés. Nuestros equipos operan en Sint Maarten con la misma eficacia que en el lado francés.</p>
         <div class="zone-places">
           <span class="zone-place">Philipsburg</span>
           <span class="zone-place">Simpson Bay</span>
@@ -757,9 +796,7 @@
         </div>
       </div>
     </div>
-    <p class="zone-tagline" data-aos="fade-up" data-aos-delay="200" data-i18n="zone.tagline">
-      + interventions ponctuelles sur <span>Saint-Barthélemy</span> & <span>Anguilla</span>
-    </p>
+    <p class="zone-tagline" data-aos="fade-up" data-aos-delay="200" data-i18n="zone.tagline">+ intervenciones puntuales en <span>Saint-Barthélemy</span> & <span>Anguilla</span></p>
   </div>
 </section>
 
@@ -769,39 +806,39 @@
 <section class="section team" id="team">
   <div class="container">
     <div class="team-header" data-aos="fade-up">
-      <span class="section-tag" data-i18n="team.tag">L'Équipe</span>
-      <h2 class="section-title" data-i18n="team.title">Des hommes de terrain,<br/><span class="highlight">au service de votre territoire.</span></h2>
-      <p class="section-sub" data-i18n="team.sub">L'équipe fondatrice de FTFL réunit des professionnels du BTP qui ont fait leurs armes sur les chantiers les plus exigeants des Caraïbes.</p>
+      <span class="section-tag" data-i18n="team.tag">El Equipo</span>
+      <h2 class="section-title" data-i18n="team.title">Profesionales de campo,<br/><span class="highlight">comprometidos con su territorio.</span></h2>
+      <p class="section-sub" data-i18n="team.sub">El equipo fundador de FTFL reúne veteranos de la construcción que han ejecutado los proyectos más exigentes del Caribe, con un conocimiento único de la realidad local.</p>
     </div>
     <div class="team-pillars">
       <div class="team-pillar" data-aos="fade-up" data-aos-delay="0">
         <div class="team-pillar-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h3 data-i18n="team.p1.h">Expérience Terrain</h3>
-        <p data-i18n="team.p1.p">Des années de chantiers à Saint-Martin, une connaissance concrète des contraintes locales : climat, logistique, approvisionnement.</p>
+        <h3 data-i18n="team.p1.h">Experiencia de Campo</h3>
+        <p data-i18n="team.p1.p">Años de obras en Saint-Martin nos han dado un conocimiento concreto de sus retos: clima tropical, logística insular, cadenas de suministro locales.</p>
       </div>
       <div class="team-pillar" data-aos="fade-up" data-aos-delay="100">
         <div class="team-pillar-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3 data-i18n="team.p2.h">Équipe Structurée</h3>
-        <p data-i18n="team.p2.p">Chefs de chantier dédiés, ouvriers qualifiés, coordinateurs. Chaque projet dispose d'un référent unique pour une communication fluide.</p>
+        <h3 data-i18n="team.p2.h">Equipo Estructurado</h3>
+        <p data-i18n="team.p2.p">Jefes de obra experimentados, operarios cualificados, coordinadores de proyecto. Cada obra tiene un responsable único — su interlocutor del inicio al fin.</p>
       </div>
       <div class="team-pillar" data-aos="fade-up" data-aos-delay="200">
         <div class="team-pillar-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <h3 data-i18n="team.p3.h">Réseau Local Solide</h3>
-        <p data-i18n="team.p3.p">Fournisseurs, sous-traitants, loueurs d'engins : nous travaillons avec les meilleurs acteurs des deux côtés de l'île.</p>
+        <h3 data-i18n="team.p3.h">Red Local Sólida</h3>
+        <p data-i18n="team.p3.p">Proveedores de confianza, subcontratistas certificados, empresas de alquiler de maquinaria en ambos lados de la frontera: nuestra red es la columna vertebral de sus proyectos.</p>
       </div>
     </div>
     <div class="team-cta" data-aos="fade-up">
-      <h3 data-i18n="team.cta.h">Prêt à démarrer votre projet ?</h3>
-      <p data-i18n="team.cta.p">Contactez-nous dès aujourd'hui pour une étude gratuite et sans engagement.</p>
+      <h3 data-i18n="team.cta.h">¿Listo para iniciar su proyecto?</h3>
+      <p data-i18n="team.cta.p">Contáctenos hoy mismo para un estudio gratuito y sin compromiso. Respondemos en menos de 24 horas.</p>
       <a href="#contact" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.2a16 16 0 0 0 6 6l1.56-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15.56z"/></svg>
-        <span data-i18n="team.cta.btn">Nous contacter</span>
+        <span data-i18n="team.cta.btn">Contáctenos</span>
       </a>
     </div>
   </div>
@@ -815,13 +852,9 @@
     <div class="contact-grid">
       <!-- Info -->
       <div data-aos="fade-right">
-        <a href="/es/contacto/" class="section-tag" data-i18n="contact.tag">Contact</a>
-        <h2 class="contact-info" style="font-family:var(--font-head);font-size:2.2rem;font-weight:800;margin-bottom:20px;" data-i18n="contact.title">
-          Construisons ensemble<br/><span class="highlight">votre projet.</span>
-        </h2>
-        <p style="font-size:1rem;color:var(--gray-light);line-height:1.75;margin-bottom:36px;text-align:justify;" data-i18n="contact.sub">
-          Vous avez un projet de construction, de rénovation ou d'aménagement ? Notre équipe est disponible pour étudier votre demande et vous proposer un devis gratuit.
-        </p>
+        <a href="/es/contacto/" class="section-tag" data-i18n="contact.tag">Contacto</a>
+        <h2 class="contact-info" style="font-family:var(--font-head);font-size:2.2rem;font-weight:800;margin-bottom:20px;" data-i18n="contact.title">Construyamos juntos<br/><span class="highlight">su proyecto.</span></h2>
+        <p style="font-size:1rem;color:var(--gray-light);line-height:1.75;margin-bottom:36px;text-align:justify;" data-i18n="contact.sub">¿Tiene un proyecto de construcción, reforma o acondicionamiento? Nuestro equipo analiza su solicitud y le presenta un presupuesto detallado, gratuito y sin compromiso.</p>
         <div class="contact-items">
           <a class="contact-item" href="https://wa.me/590690432818" target="_blank" rel="noopener">
             <div class="contact-item-icon" style="color:#25D366;">
@@ -855,7 +888,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
             </div>
             <div class="contact-item-text">
-              <label data-i18n="ci.web">Site web</label>
+              <label data-i18n="ci.web">Sitio web</label>
               <a href="https://www.ftfl-sxm.com" target="_blank">ftfl-sxm.com</a>
             </div>
           </div>
@@ -864,7 +897,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div class="contact-item-text">
-              <label data-i18n="ci.loc">Localisation</label>
+              <label data-i18n="ci.loc">Ubicación</label>
               <span>Saint-Martin / Sint Maarten</span>
             </div>
           </div>
@@ -874,7 +907,7 @@
       <!-- Form -->
       <div data-aos="fade-left" data-aos-delay="100">
         <div class="contact-form">
-          <h3 class="form-title" data-i18n="form.title">Demande de devis gratuit</h3>
+          <h3 class="form-title" data-i18n="form.title">Solicitar presupuesto gratuito</h3>
           <form id="contactForm" onsubmit="handleSubmit(event)">
             <!-- FormSubmit config -->
             <input type="hidden" name="_subject"      value="Nouvelle demande de devis — FTFL CARAÏBES"/>
@@ -885,11 +918,11 @@
             <input type="hidden" name="Heure (Saint-Martin)" id="sxmTime" value=""/>
             <div class="form-row">
               <div class="form-group">
-                <label data-i18n="f.name">Prénom & Nom *</label>
+                <label data-i18n="f.name">Nombre y apellido *</label>
                 <input type="text" name="Nom complet" placeholder="Jean Dupont" required/>
               </div>
               <div class="form-group">
-                <label data-i18n="f.phone">Téléphone *</label>
+                <label data-i18n="f.phone">Teléfono *</label>
                 <input type="tel" name="Téléphone" id="phoneNumber" placeholder="Ex : +590 690 43 28 18" required/>
               </div>
             </div>
@@ -898,7 +931,7 @@
               <input type="email" name="Email" placeholder="votre@email.com" required/>
             </div>
             <div class="form-group">
-              <label data-i18n="f.svc">Type de prestation *</label>
+              <label data-i18n="f.svc">Tipo de servicio *</label>
               <select name="Service demandé" id="selectService" required>
                 <option value="" disabled selected>Sélectionnez un service</option>
                 <option value="Terrassement & VRD">Terrassement & VRD</option>
@@ -910,7 +943,7 @@
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label data-i18n="f.loc">Localisation du chantier</label>
+                <label data-i18n="f.loc">Ubicación de la obra</label>
                 <select name="Localisation du chantier" id="selectLocation">
                   <option value="" disabled selected>Partie française ou NL ?</option>
                   <option value="Saint-Martin — Partie Française">Saint-Martin (FR)</option>
@@ -920,7 +953,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label data-i18n="f.budget">Budget estimé</label>
+                <label data-i18n="f.budget">Presupuesto estimado</label>
                 <select name="Budget estimé" id="selectBudget">
                   <option value="" disabled selected>Budget indicatif</option>
                   <option value="Moins de 5 000 €">Moins de 5 000 €</option>
@@ -932,16 +965,16 @@
               </div>
             </div>
             <div class="form-group">
-              <label data-i18n="f.msg">Description de votre projet *</label>
+              <label data-i18n="f.msg">Descripción del proyecto *</label>
               <textarea name="Description du projet" id="msgTextarea" data-i18n-ph="f.msg.ph" placeholder="Décrivez votre projet : nature des travaux, superficie, délais souhaités…" required></textarea>
             </div>
             <button type="submit" class="form-submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              <span data-i18n="f.submit">Envoyer ma demande</span>
+              <span data-i18n="f.submit">Enviar mi solicitud</span>
             </button>
           </form>
           <div class="form-success" id="formSuccess">
-            <span data-i18n="f.success">✅ Merci ! Votre demande a bien été envoyée. Nous vous contacterons dans les plus brefs délais.</span>
+            <span data-i18n="f.success">✅ ¡Gracias! Su solicitud ha sido recibida. Nuestro equipo se pondrá en contacto con usted en menos de 24 horas.</span>
           </div>
         </div>
       </div>
@@ -957,44 +990,44 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo"><img src="/images/Logo FTFL.png" alt="FTFL CARAÏBES"/></div>
-        <p data-i18n="ft.desc">Un seul partenaire pour tous vos travaux à Saint-Martin. Terrassement, VRD, aménagement extérieur, second œuvre et multiservices.</p>
+        <p data-i18n="ft.desc">Su socio de construcción de referencia en Saint-Martin. Movimiento de tierras, urbanización y redes, obras exteriores, acabados y multiservicios.</p>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="ft.h.svc">Services</h4>
+        <h4 data-i18n="ft.h.svc">Servicios</h4>
         <ul>
-          <li><a href="#services" data-i18n="ft.svc1">Terrassement & VRD</a></li>
-          <li><a href="#services" data-i18n="ft.svc2">Aménagement Extérieur</a></li>
-          <li><a href="#services" data-i18n="ft.svc3">Second Œuvre</a></li>
-          <li><a href="#services" data-i18n="ft.svc4">Multiservices</a></li>
+          <li><a href="#services" data-i18n="ft.svc1">Movimiento de tierras y redes</a></li>
+          <li><a href="#services" data-i18n="ft.svc2">Obras exteriores</a></li>
+          <li><a href="#services" data-i18n="ft.svc3">Obras de Acabado</a></li>
+          <li><a href="#services" data-i18n="ft.svc4">Multiservicios</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="ft.h.co">Entreprise</h4>
+        <h4 data-i18n="ft.h.co">Empresa</h4>
         <ul>
-          <li><a href="#about" data-i18n="ft.about">À propos</a></li>
-          <li><a href="#values" data-i18n="ft.vals">Nos valeurs</a></li>
-          <li><a href="#approach" data-i18n="ft.app">Notre approche</a></li>
-          <li><a href="#team" data-i18n="ft.team">L'équipe</a></li>
+          <li><a href="#about" data-i18n="ft.about">Quiénes somos</a></li>
+          <li><a href="#values" data-i18n="ft.vals">Nuestros valores</a></li>
+          <li><a href="#approach" data-i18n="ft.app">Nuestro método</a></li>
+          <li><a href="#team" data-i18n="ft.team">El equipo</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="ft.h.ct">Contact</h4>
+        <h4 data-i18n="ft.h.ct">Contacto</h4>
         <ul>
           <li><a href="https://wa.me/590690432818" target="_blank" rel="noopener">WhatsApp : +590 690 43 28 18</a></li>
           <li><a href="mailto:contact@ftfl-sxm.com">contact@ftfl-sxm.com</a></li>
           <li><a href="https://www.linkedin.com/company/ftfl-cara%C3%AFbes/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="#contact" data-i18n="ft.quote">Demander un devis</a></li>
+          <li><a href="#contact" data-i18n="ft.quote">Solicitar presupuesto</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span data-i18n="ft.copy">© 2025 FTFL CARAÏBES — Tous droits réservés</span>
+      <span data-i18n="ft.copy">© 2025 FTFL CARAÏBES — Todos los derechos reservados</span>
       <div class="footer-legal-links">
-        <a id="legal1-link" href="/es/aviso-legal/" data-i18n="ft.legal1">Mentions légales</a>
+        <a id="legal1-link" href="/es/aviso-legal/" data-i18n="ft.legal1">Aviso legal</a>
         <span aria-hidden="true">·</span>
-        <a id="legal2-link" href="/es/politica-privacidad/" data-i18n="ft.legal2">Politique de confidentialité</a>
+        <a id="legal2-link" href="/es/politica-privacidad/" data-i18n="ft.legal2">Política de privacidad</a>
       </div>
-      <span data-i18n="ft.slogan">Saint-Martin · Sint Maarten · Caraïbes 🌴</span>
+      <span data-i18n="ft.slogan">Saint-Martin · Sint Maarten · Caribe 🌴</span>
     </div>
   </div>
 </footer>

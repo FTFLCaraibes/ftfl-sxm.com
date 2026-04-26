@@ -3,7 +3,7 @@ generate_seo_pages.py
 Génère 25 pages SEO (5 slugs x 5 langues) + 10 pages légales (2 x 5 langues).
 Usage : python generate_seo_pages.py
 """
-import os, sys
+import os, sys, json, re, datetime
 sys.stdout.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -1125,6 +1125,132 @@ LEGAL_CONTENT_BUILDERS = {
 
 # ── Générateur de page ────────────────────────────────────────────
 
+def generate_sitemap():
+    """Generate sitemap.xml with today's date as lastmod for all 40 URLs."""
+    today = datetime.date.today().isoformat()
+
+    def hreflang_block(slug, indent='    '):
+        lines = []
+        for lk in LANG_ORDER:
+            url = slug_url(lk, slug)
+            lines.append(f'{indent}<xhtml:link rel="alternate" hreflang="{lk}" href="{url}"/>')
+        fr_slug = SLUG_TRANSLATIONS[slug]['fr']
+        lines.append(f'{indent}<xhtml:link rel="alternate" hreflang="x-default" href="{BASE_URL}/{fr_slug}/"/>')
+        return '\n'.join(lines)
+
+    def home_hreflang(indent='    '):
+        lines = []
+        for lk in LANG_ORDER:
+            url = f'{BASE_URL}/{lk}/' if lk != 'fr' else f'{BASE_URL}/'
+            lines.append(f'{indent}<xhtml:link rel="alternate" hreflang="{lk}" href="{url}"/>')
+        lines.append(f'{indent}<xhtml:link rel="alternate" hreflang="x-default" href="{BASE_URL}/"/>')
+        return '\n'.join(lines)
+
+    urls = []
+
+    # Home pages
+    home_prios = {'fr': '1.0', 'en': '0.9', 'es': '0.9', 'nl': '0.9', 'pt': '0.9'}
+    for lk in LANG_ORDER:
+        loc = f'{BASE_URL}/{lk}/' if lk != 'fr' else f'{BASE_URL}/'
+        prio = home_prios[lk]
+        urls.append(f"""  <url>
+    <loc>{loc}</loc>
+    <lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{prio}</priority>
+{home_hreflang()}
+  </url>""")
+
+    # SEO pages (5 slugs × 5 langs)
+    for slug in PAGE_SLUGS:
+        for lk in LANG_ORDER:
+            loc = slug_url(lk, slug)
+            urls.append(f"""  <url>
+    <loc>{loc}</loc>
+    <lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+{hreflang_block(slug)}
+  </url>""")
+
+    # Legal pages (2 slugs × 5 langs)
+    for slug in LEGAL_SLUGS:
+        for lk in LANG_ORDER:
+            loc = slug_url(lk, slug)
+            urls.append(f"""  <url>
+    <loc>{loc}</loc>
+    <lastmod>{today}</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+{hreflang_block(slug)}
+  </url>""")
+
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+    xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n\n'
+    xml += '\n'.join(urls)
+    xml += '\n</urlset>\n'
+
+    out_path = os.path.join(BASE_DIR, 'sitemap.xml')
+    with open(out_path, 'w', encoding='utf-8') as f:
+        f.write(xml)
+    print(f'[OK] sitemap.xml  ({len(urls)} URLs, lastmod={today})')
+
+
+def apply_i18n(html: str, lang_code: str) -> str:
+    """Pre-render data-i18n element content with the correct language translation."""
+    json_path = os.path.join(BASE_DIR, 'i18n', f'{lang_code}.json')
+    if not os.path.exists(json_path):
+        return html
+    with open(json_path, encoding='utf-8') as f:
+        translations = json.load(f)
+
+    open_re = re.compile(r'<([a-zA-Z][a-zA-Z0-9]*)[^>]*\sdata-i18n="([^"]+)"[^>]*>')
+    result = []
+    pos = 0
+
+    while pos < len(html):
+        m = open_re.search(html, pos)
+        if m is None:
+            result.append(html[pos:])
+            break
+        tag = m.group(1).lower()
+        key = m.group(2)
+        open_end = m.end()
+
+        if key not in translations:
+            result.append(html[pos:open_end])
+            pos = open_end
+            continue
+
+        depth = 1
+        search = open_end
+        open_pat  = re.compile(rf'<{re.escape(tag)}(?:\s[^>]*)?>',  re.IGNORECASE)
+        close_pat = re.compile(rf'</{re.escape(tag)}>', re.IGNORECASE)
+        close_m = None
+
+        while depth > 0 and search < len(html):
+            om = open_pat.search(html, search)
+            cm = close_pat.search(html, search)
+            if cm is None:
+                break
+            if om is not None and om.start() < cm.start():
+                depth += 1
+                search = om.end()
+            else:
+                depth -= 1
+                if depth == 0:
+                    close_m = cm
+                else:
+                    search = cm.end()
+
+        if close_m is None:
+            result.append(html[pos:open_end])
+            pos = open_end
+            continue
+
+        result.append(html[pos:open_end])
+        result.append(translations[key])
+        result.append(close_m.group(0))
+        pos = close_m.end()
+
+    return ''.join(result)
+
+
 def build_page(lc, slug, meta, og_image, content_html, breadcrumb_schema_html):
     lang     = lc['lang']
     canonical = slug_url(lang, slug)
@@ -1172,6 +1298,8 @@ if __name__ == '__main__':
             bc_schema = build_breadcrumb_schema(lc, slug, meta, canonical)
             content   = CONTENT_BUILDERS[slug](lc)
             html      = build_page(lc, slug, meta, og_image, content, bc_schema)
+            if lang_code != 'fr':
+                html = apply_i18n(html, lang_code)
 
             translated = SLUG_TRANSLATIONS[slug][lang_code]
             rel = f'/{translated}/' if lang_code == 'fr' else f'/{lang_code}/{translated}/'
@@ -1194,6 +1322,8 @@ if __name__ == '__main__':
             bc_schema = build_breadcrumb_schema(lc, slug, meta_full, canonical)
             content   = LEGAL_CONTENT_BUILDERS[slug](lc)
             html      = build_page(lc, slug, meta_full, og_image, content, bc_schema)
+            if lang_code != 'fr':
+                html = apply_i18n(html, lang_code)
 
             translated = SLUG_TRANSLATIONS[slug][lang_code]
             rel = f'/{translated}/' if lang_code == 'fr' else f'/{lang_code}/{translated}/'
@@ -1201,4 +1331,7 @@ if __name__ == '__main__':
             print(f'[OK] {rel}')
 
     print(f'\n[DONE] {len(PAGE_SLUGS)*len(LANG_ORDER)} SEO pages + {len(LEGAL_SLUGS)*len(LANG_ORDER)} legal pages generated.')
+
+    # ── Sitemap auto-généré ──────────────────────────────────────
+    generate_sitemap()
     print('Pensez a commit + push sur GitHub.')
